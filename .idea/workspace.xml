@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b75a7382-6a40-460c-a0ec-1705310a8b8b" name="Default Changelist" comment="" />
+    <list default="true" id="b75a7382-6a40-460c-a0ec-1705310a8b8b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -120,9 +123,21 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Models" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -143,7 +158,11 @@
       <workItem from="1590704301423" duration="37000" />
       <workItem from="1590704350598" duration="65000" />
       <workItem from="1590704437891" duration="11000" />
-      <workItem from="1590704461163" duration="293000" />
+      <workItem from="1590704461163" duration="785000" />
+      <workItem from="1590705448469" duration="3090000" />
+      <workItem from="1590783397963" duration="719000" />
+      <workItem from="1590795459050" duration="6473000" />
+      <workItem from="1590985617311" duration="481000" />
     </task>
     <servers />
   </component>
@@ -151,9 +170,45 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="461" y="224" key="SettingsEditor" timestamp="1590704489683">
+    <state x="560" y="250" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590707537893">
       <screen x="0" y="23" width="1920" height="1124" />
     </state>
-    <state x="461" y="224" key="SettingsEditor/0.23.1920.1124@0.23.1920.1124" timestamp="1590704489683" />
+    <state x="560" y="250" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1124@0.23.1920.1124" timestamp="1590707537893" />
+    <state x="703" y="456" key="Create Database Migration" timestamp="1590707125273">
+      <screen x="0" y="23" width="1920" height="1124" />
+    </state>
+    <state x="703" y="456" key="Create Database Migration/0.23.1920.1124@0.23.1920.1124" timestamp="1590707125273" />
+    <state x="842" y="516" key="Create Database Seeder" timestamp="1590955607121">
+      <screen x="0" y="23" width="1920" height="1124" />
+    </state>
+    <state x="842" y="516" key="Create Database Seeder/0.23.1920.1124@0.23.1920.1124" timestamp="1590955607121" />
+    <state x="842" y="516" key="Create Eloquent Cast" timestamp="1590888512421">
+      <screen x="0" y="23" width="1920" height="1124" />
+    </state>
+    <state x="842" y="516" key="Create Eloquent Cast/0.23.1920.1124@0.23.1920.1124" timestamp="1590888512421" />
+    <state x="842" y="516" key="Create Model" timestamp="1590888980817">
+      <screen x="0" y="23" width="1920" height="1124" />
+    </state>
+    <state x="842" y="516" key="Create Model/0.23.1920.1124@0.23.1920.1124" timestamp="1590888980817" />
+    <state width="243" height="457" key="HiddenNamespacesPopup" timestamp="1590707530154">
+      <screen x="0" y="23" width="1920" height="1124" />
+    </state>
+    <state width="243" height="457" key="HiddenNamespacesPopup/0.23.1920.1124@0.23.1920.1124" timestamp="1590707530154" />
+    <state x="779" y="515" key="NewPhpFileDialog" timestamp="1590888998196">
+      <screen x="0" y="23" width="1920" height="1124" />
+    </state>
+    <state x="779" y="515" key="NewPhpFileDialog/0.23.1920.1124@0.23.1920.1124" timestamp="1590888998196" />
+    <state x="116" y="169" width="1339" height="751" key="SettingsEditor" timestamp="1590985767686">
+      <screen x="0" y="23" width="1920" height="1124" />
+    </state>
+    <state x="116" y="169" width="1339" height="751" key="SettingsEditor/0.23.1920.1124@0.23.1920.1124" timestamp="1590985767686" />
+    <state x="730" y="417" width="460" height="340" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1590955960578">
+      <screen x="0" y="23" width="1920" height="1124" />
+    </state>
+    <state x="730" y="417" width="460" height="340" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.23.1920.1124@0.23.1920.1124" timestamp="1590955960578" />
+    <state x="625" y="275" width="670" height="676" key="search.everywhere.popup" timestamp="1590891165917">
+      <screen x="0" y="23" width="1920" height="1124" />
+    </state>
+    <state x="625" y="275" width="670" height="676" key="search.everywhere.popup/0.23.1920.1124@0.23.1920.1124" timestamp="1590891165917" />
   </component>
 </project>
