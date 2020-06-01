@@ -11,11 +11,11 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.sass('resources/scss/app.scss', 'public/css/app.css')
 mix.styles([
     'resources/css/nucleo.css',
     'resources/css/argon.css',
-    'resources/css/open-sans.css'
+    'resources/css/open-sans.css',
+    'resources/css/awesome.css'
 ], 'public/css/all.css')
 mix.copyDirectory('resources/webfonts', 'public/webfonts')
 mix.copyDirectory('resources/img', 'public/img')
