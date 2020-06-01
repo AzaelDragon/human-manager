@@ -19,3 +19,13 @@ mix.styles([
 ], 'public/css/all.css')
 mix.copyDirectory('resources/fonts', 'public/fonts')
 mix.copyDirectory('resources/img', 'public/img')
+mix.scripts([
+    'resources/js/argon.js',
+    'resources/js/bootstrap.bundle.min.js',
+    'resources/js/Chart.extension.js',
+    'resources/js/Chart.min.js',
+    'resources/js/jquery.min.js',
+    'resources/js/jquery.scrollbar.min.js',
+    'resources/js/jquery-scrollLock.min.js',
+    'resources/js/js.cookie.js'
+], 'public/js/all.js')
