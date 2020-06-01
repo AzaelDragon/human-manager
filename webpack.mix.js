@@ -17,7 +17,7 @@ mix.styles([
     'resources/css/argon.css',
     'resources/css/open-sans.css'
 ], 'public/css/all.css')
-mix.copyDirectory('resources/fonts', 'public/fonts')
+mix.copyDirectory('resources/webfonts', 'public/webfonts')
 mix.copyDirectory('resources/img', 'public/img')
 mix.scripts([
     'resources/js/argon.js',
