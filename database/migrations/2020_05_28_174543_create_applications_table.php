@@ -16,6 +16,12 @@ class CreateApplicationsTable extends Migration
             $table -> unsignedBigInteger('employee');
             $table -> unsignedBigInteger('requested_money');
             $table -> string('comments') -> nullable();
+            $table -> boolean('had_benefit_before');
+            $table -> boolean('has_interest_letter');
+            $table -> boolean('has_education_signup');
+            $table -> boolean('has_family_certificate') -> nullable();
+            $table -> boolean('has_past_semester_approbation') -> nullable();
+            $table -> boolean('has_juramented_declaration') -> nullable();
             $table -> timestamps();
 
             $table -> foreign('application_type') -> references('id') -> on('application_types');
