@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b75a7382-6a40-460c-a0ec-1705310a8b8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/Chart.extension.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/Chart.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/argon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/jquery-scrollLock.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/jquery.scrollbar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/js.cookie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/applications/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/applications/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/human-manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/human-manager.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/EmployeesSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/EmployeesSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +18,13 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -120,6 +124,7 @@
       <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
       <path value="$PROJECT_DIR$/vendor/psr/log" />
       <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
     </include_path>
   </component>
   <component name="ProjectId" id="1cYSzqOdTIvQUP1Q7nI5NcGWwwB" />
@@ -133,7 +138,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/applications" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -141,19 +146,22 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/js" />
-      <recent name="$PROJECT_DIR$/resources/fonts" />
+      <recent name="$PROJECT_DIR$/resources/views/applications" />
+      <recent name="$PROJECT_DIR$/resources/views/employees" />
+      <recent name="$PROJECT_DIR$/public/js" />
+      <recent name="$PROJECT_DIR$/public/img/brand" />
       <recent name="$PROJECT_DIR$/resources/css" />
-      <recent name="$PROJECT_DIR$/resources/scss" />
-      <recent name="$PROJECT_DIR$/resources/sass" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/js" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/resources/views/employees" />
+      <recent name="$PROJECT_DIR$/resources/views/index" />
       <recent name="$PROJECT_DIR$/resources/css" />
-      <recent name="$PROJECT_DIR$/app/Models" />
     </key>
   </component>
   <component name="RunManager">
@@ -179,7 +187,7 @@
       <workItem from="1590705448469" duration="3090000" />
       <workItem from="1590783397963" duration="719000" />
       <workItem from="1590795459050" duration="6473000" />
-      <workItem from="1590985617311" duration="3900000" />
+      <workItem from="1590985617311" duration="39256000" />
     </task>
     <servers />
   </component>
@@ -191,10 +199,15 @@
       <screen x="0" y="23" width="1920" height="1124" />
     </state>
     <state x="560" y="250" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1124@0.23.1920.1124" timestamp="1590707537893" />
-    <state x="698" y="339" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590987112882">
-      <screen x="0" y="23" width="1920" height="1124" />
+    <state x="698" y="338" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590990760981">
+      <screen x="0" y="23" width="1920" height="1122" />
     </state>
+    <state x="698" y="338" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1122@0.23.1920.1122" timestamp="1590990760981" />
     <state x="698" y="339" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1124@0.23.1920.1124" timestamp="1590987112882" />
+    <state x="698" y="286" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1591071668806">
+      <screen x="0" y="23" width="1920" height="1002" />
+    </state>
+    <state x="698" y="286" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1920.1002/1920.23.1920.1057@0.23.1920.1002" timestamp="1591071668806" />
     <state x="703" y="456" key="Create Database Migration" timestamp="1590707125273">
       <screen x="0" y="23" width="1920" height="1124" />
     </state>
@@ -215,21 +228,34 @@
       <screen x="0" y="23" width="1920" height="1124" />
     </state>
     <state width="243" height="457" key="HiddenNamespacesPopup/0.23.1920.1124@0.23.1920.1124" timestamp="1590707530154" />
-    <state x="779" y="515" key="NewPhpFileDialog" timestamp="1590888998196">
-      <screen x="0" y="23" width="1920" height="1124" />
+    <state x="779" y="461" key="NewPhpFileDialog" timestamp="1591051363247">
+      <screen x="0" y="23" width="1920" height="1002" />
     </state>
+    <state x="779" y="461" key="NewPhpFileDialog/0.23.1920.1002/1920.23.1920.1057@0.23.1920.1002" timestamp="1591051363247" />
+    <state x="779" y="514" key="NewPhpFileDialog/0.23.1920.1122@0.23.1920.1122" timestamp="1590990323640" />
     <state x="779" y="515" key="NewPhpFileDialog/0.23.1920.1124@0.23.1920.1124" timestamp="1590888998196" />
-    <state x="116" y="169" width="1339" height="751" key="SettingsEditor" timestamp="1590985767686">
-      <screen x="0" y="23" width="1920" height="1124" />
+    <state x="116" y="153" width="1339" height="722" key="SettingsEditor" timestamp="1591046750802">
+      <screen x="0" y="23" width="1920" height="1002" />
     </state>
+    <state x="116" y="153" width="1339" height="722" key="SettingsEditor/0.23.1920.1002/1920.23.1920.1057@0.23.1920.1002" timestamp="1591046750802" />
     <state x="116" y="169" width="1339" height="751" key="SettingsEditor/0.23.1920.1124@0.23.1920.1124" timestamp="1590985767686" />
+    <state width="566" height="445" key="SwitcherDM" timestamp="1591046564491">
+      <screen x="0" y="23" width="1920" height="1002" />
+    </state>
+    <state width="566" height="445" key="SwitcherDM/0.23.1920.1002/1920.23.1920.1057@0.23.1920.1002" timestamp="1591046564491" />
     <state x="730" y="417" width="460" height="340" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1590955960578">
       <screen x="0" y="23" width="1920" height="1124" />
     </state>
     <state x="730" y="417" width="460" height="340" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.23.1920.1124@0.23.1920.1124" timestamp="1590955960578" />
-    <state x="625" y="275" width="670" height="676" key="search.everywhere.popup" timestamp="1590891165917">
-      <screen x="0" y="23" width="1920" height="1124" />
+    <state x="625" y="242" key="run.anything.popup" timestamp="1591066726280">
+      <screen x="0" y="23" width="1920" height="1002" />
     </state>
+    <state x="625" y="242" key="run.anything.popup/0.23.1920.1002/1920.23.1920.1057@0.23.1920.1002" timestamp="1591066726280" />
+    <state x="625" y="248" width="670" height="603" key="search.everywhere.popup" timestamp="1591066121013">
+      <screen x="0" y="23" width="1920" height="1002" />
+    </state>
+    <state x="625" y="248" width="670" height="603" key="search.everywhere.popup/0.23.1920.1002/1920.23.1920.1057@0.23.1920.1002" timestamp="1591066121013" />
+    <state x="625" y="275" width="670" height="675" key="search.everywhere.popup/0.23.1920.1122@0.23.1920.1122" timestamp="1591030894679" />
     <state x="625" y="275" width="670" height="676" key="search.everywhere.popup/0.23.1920.1124@0.23.1920.1124" timestamp="1590891165917" />
   </component>
 </project>
