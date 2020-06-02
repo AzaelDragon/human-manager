@@ -13,7 +13,6 @@ class CreateEmployeesTable extends Migration
             $table -> string('name');
             $table -> integer('performance_score');
             $table -> boolean('is_administrative');
-            $table -> boolean('has_exceeded_applications');
             $table -> date('employment_date');
             $table -> decimal('wage');
             $table -> timestamps();
