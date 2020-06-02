@@ -92,6 +92,7 @@ class EmployeeController extends Controller {
         $employee -> name = str_replace('\'', '', strtoupper($val = iconv('UTF-8','ASCII//TRANSLIT', $request -> get('name'))));
         $employee -> performance_score = $request -> get('performance_score');
         $employee -> is_administrative = ($request -> get('is_administrative') == 'on') ? 1 : 0;
+        $employee -> last_year_beneficiary = ($request -> get('last_year_beneficiary') == 'on') ? 1 : 0;
         $employee -> employment_date = $request -> get('employment_date');
         $employee -> wage = $request -> get('wage');
         $employee -> save();
@@ -144,6 +145,7 @@ class EmployeeController extends Controller {
         $employee -> name = $request -> get('name');
         $employee -> performance_score = $request -> get('performance_score');
         $employee -> is_administrative = ($request -> get('is_administrative') == 'on') ? 1 : 0;
+        $employee -> last_year_beneficiary = ($request -> get('last_year_beneficiary') == 'on') ? 1 : 0;
         $employee -> employment_date = $request -> get('employment_date');
         $employee -> wage = $request -> get('wage');
         $employee -> save();
@@ -158,6 +160,8 @@ class EmployeeController extends Controller {
      * @param  \App\Models\Employee  $employee
      * @return \Illuminate\Http\Response
      */
+
+
     public function destroy(Employee $employee) {
 
         $employee -> delete();

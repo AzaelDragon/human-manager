@@ -77,6 +77,21 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label style="margin-left: 28px">¿Fúe beneficiario en el 2019?</label>
+                                        <div class="custom-control custom-checkbox">
+                                            <label class="custom-toggle">
+                                                <input name="last_year_beneficiary" id="last_year_beneficiary" type="checkbox" @if($data -> last_year_beneficiary == 1) checked @endif>
+                                                <span class="custom-toggle-slider rounded-circle" data-label-off="No" data-label-on="Sí"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <hr class="my-4" />
                         <div class="row justify-content-center">

@@ -71,7 +71,8 @@
                             <th scope="col" class="sort" data-sort="document"> Cédula </th>
                             <th scope="col" class="sort" data-sort="name"> Nombre </th>
                             <th scope="col" class="sort" data-sort="perfomance_score"> Desempeño </th>
-                            <th scope="col" class="sort" data-sort="is_administrative"> ¿Administrativo? </th>
+                            <th scope="col" class="sort" data-sort="is_administrative"> ¿Admin? </th>
+                            <th scope="col" class="sort" data-sort="is_administrative"> ¿Ben. 2019? </th>
                             <th scope="col" class="sort" data-sort="employment_date"> Antigüedad </th>
                             <th scope="col" class="sort" data-sort="wage"> Salario </th>
                             <th scope="col" class="sort" data-sort="limit"> Solicitudes </th>
@@ -95,6 +96,13 @@
                                 </td>
                                 <td>
                                     @if($entry -> is_administrative == 1)
+                                        <i class="fas fa-check text-success"></i>
+                                    @else
+                                        <i class="fas fa-times text-danger"></i>
+                                    @endif
+                                </td>
+                                <td>
+                                    @if($entry -> last_year_beneficiary == 1)
                                         <i class="fas fa-check text-success"></i>
                                     @else
                                         <i class="fas fa-times text-danger"></i>
