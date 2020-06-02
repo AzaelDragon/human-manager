@@ -11,6 +11,9 @@ const mix = require('laravel-mix');
  |
  */
 
+mix.autoload({
+    jquery: ['$', 'jQuery', 'window.jQuery'],
+});
 mix.styles([
     'resources/css/nucleo.css',
     'resources/css/argon.css',
