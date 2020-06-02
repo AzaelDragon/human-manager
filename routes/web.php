@@ -14,5 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+}) -> name('home');
+
+Route::post('employees/search', 'EmployeeController@search') -> name('employees.search');
+Route::get('employees/search', function () {
+    return redirect() -> route('employees.index');
 });
+Route::resource('employees', 'EmployeeController') -> except('show');
+
+
+Route::post('applications/search', 'ApplicationController@search') -> name('applications.search');
+Route::get('applications/search', function () {
+    return redirect() -> route('applications.index');
+});
+Route::resource('applications', 'ApplicationController') -> except('show');
