@@ -9,8 +9,8 @@ class CreateApplicationsTable extends Migration
     public function up() {
         Schema::create('applications', function (Blueprint $table) {
             $table -> bigIncrements('id');
-            $table -> bigInteger('filling_number');
-            $table -> date('filling_date');
+            $table -> string('filling_number');
+            $table -> date('filling_date') -> nullable();
             $table -> boolean('last_year_beneficiary');
             $table -> unsignedBigInteger('application_type');
             $table -> unsignedBigInteger('application_target');

@@ -89,7 +89,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text" id="basic-addon1"> # de Radicado </span>
                                             </div>
-                                            <input type="number" class="form-control form-control-lg" placeholder="1010101010" id="filling_number" name="filling_number">
+                                            <input type="text" class="form-control form-control-lg" placeholder="2020-XX-XXXX" id="filling_number" name="filling_number">
                                         </div>
                                     </div>
                                 </div>
@@ -399,7 +399,7 @@
         }
 
         function checkBasic() {
-            if ($('#filling_number').val() === '' || $('#filling_date').val() === '' || $('#requested_money').val() === '') {
+            if ($('#filling_number').val() === '' || $('#requested_money').val() === '') {
                 $('#basic-error').html('Algo no está bien. Revisa tus datos e intenta de nuevo.')
             } else {
                 $('#main-info-stuff').addClass('animate__animated animate__fadeOut').on('animationend', function () {

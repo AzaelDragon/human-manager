@@ -38,7 +38,7 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="filling_number">Número de radicado</label>
-                                        <input type="number" id="filling_number" name="filling_number" class="form-control" placeholder="XXXXXXX" value="">
+                                        <input type="text" id="filling_number" name="filling_number" class="form-control" placeholder="2020-XX-XXXX" value="">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">

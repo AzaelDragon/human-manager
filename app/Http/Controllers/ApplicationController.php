@@ -11,155 +11,6 @@ use Illuminate\Support\Facades\Validator;
 
 class ApplicationController extends Controller {
 
-    public static function calculate_score(Application $application, Employee $employee) {
-
-        $base_mandatory = self::ponderate_requirements($application, $employee);
-        $optional_mandatory = self::ponderate_conditionals($application, $employee);
-
-        if ($base_mandatory[0] == $base_mandatory[1] && $optional_mandatory[0] == $optional_mandatory[1]) {
-
-            $level_score = ($application->application_target <= 4) ? 100 : 80;
-
-            $parsed_date = new \DateTime($employee->employment_date);
-            $years_diff = $parsed_date->diff(Carbon::now())->y;
-
-            if ($years_diff < 2)
-                $years_score = 10;
-            else if ($years_diff >= 2 && $years_diff <= 4)
-                $years_score = 25;
-            else if ($years_diff >= 5 && $years_diff <= 7)
-                $years_score = 50;
-            else if ($years_diff >= 8 && $years_diff <= 10)
-                $years_score = 75;
-            else
-                $years_score = 100;
-
-            $minimum_wage = 980657;
-            $adjusted_wage = $employee->wage / $minimum_wage;
-
-            if ($adjusted_wage < 3.0)
-                $wage_score = 100;
-            else if ($adjusted_wage >= 3.0 && $adjusted_wage <= 5.0)
-                $wage_score = 75;
-            else if ($adjusted_wage > 5.0 && $adjusted_wage < 8.0)
-                $wage_score = 50;
-            else
-                $wage_score = 25;
-
-            $total = ($level_score * 0.3) + ($years_score * 0.35) + ($wage_score * 0.35);
-            $summary = '• Antigüedad: ' . $years_diff . ' (' . $years_score . ' pts)</br>';
-            $summary .= '• Nivel: ' . ApplicationTarget::firstWhere('id', $application->application_target)->name . ' (' . $level_score . ' pts)</br>';
-            $summary .= '• Salario: ' . explode('.', $adjusted_wage)[0] . ' SM (' . $wage_score . ' pts)</br>';
-
-            return [$total, $summary];
-
-        } else {
-
-            $summary = '• Esta solicitud no cumple con todos los requerimientos solicitados.';
-            return [0, $summary];
-
-        }
-
-    }
-
-    public static function ponderate_requirements(Application $application, Employee $employee) {
-
-        $amount = 5;
-        $score = 0;
-        $reqs = [];
-
-        $parsed_date = new \DateTime($employee -> employment_date);
-        $years_diff = $parsed_date -> diff(Carbon::now()) -> y;
-
-        if ($years_diff >= 1) {
-            $score += 1;
-            $reqs['year'] = '<span class="text-success"><i class="fas fa-check"></i></span>';
-        } else {
-            $reqs['year'] = '<span class="text-danger"><i class="fas fa-times"></i></span>';
-        }
-
-        if ($employee -> performance_score >= 90) {
-            $score += 1;
-            $reqs['score'] = '<span class="text-success"><i class="fas fa-check"></i></span>';
-        } else {
-            $reqs['score'] = '<span class="text-danger"><i class="fas fa-times"></i></span>';
-        }
-
-        if ($application -> has_interest_letter == 1) {
-            $score += 1;
-            $reqs['interest'] = '<span class="text-success"><i class="fas fa-check"></i></span>';
-        } else {
-            $reqs['interest'] = '<span class="text-danger"><i class="fas fa-times"></i></span>';
-        }
-
-        if ($application -> has_education_signup == 1) {
-            $score += 1;
-            $reqs['signup'] = '<span class="text-success"><i class="fas fa-check"></i></span>';
-        } else {
-            $reqs['signup'] = '<span class="text-danger"><i class="fas fa-times"></i></span>';
-        }
-
-        if ($application -> has_juramented_declaration == 1) {
-            $score += 1;
-            $reqs['juramented'] = '<span class="text-success"><i class="fas fa-check"></i></span>';
-        } else {
-            $reqs['juramented'] = '<span class="text-danger"><i class="fas fa-times"></i></span>';
-        }
-
-        $summary =
-        '• Antigüedad: &nbsp;&nbsp;'.$reqs['year'].'<br/>
-        • Puntaje: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$reqs['score'].'<br/>
-        • Carta: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$reqs['interest'].'<br/>
-        • Certificado: &nbsp;&nbsp;&nbsp;'.$reqs['signup'].'<br/>
-        • Declaración: &nbsp;'.$reqs['juramented'].'<br/>';
-
-        $ponderate = ($score/$amount)*100;
-
-        return [$amount, $score, $ponderate, $summary];
-
-    }
-
-    public static function ponderate_conditionals(Application $application, Employee $employee) {
-
-        $amount = 0;
-        $score = 0;
-        $reqs = [];
-
-        $summary = '';
-
-        if ($application -> last_year_beneficiary == 1) {
-            $amount += 1;
-            if ($application -> has_past_semester_approbation == 1) {
-                $reqs['year'] = '<span class="text-success"><i class="fas fa-check"></i></span>';
-                $score += 1;
-            } else {
-                $reqs['year'] = '<span class="text-danger"><i class="fas fa-times"></i></span>';;
-            }
-            $summary = $summary . '• Aprobación anterior: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$reqs['year'].'<br/>';
-        }
-
-        if ($application -> application_type == 2) {
-            $amount += 1;
-            if ($application -> has_family_certificate == 1) {
-                $reqs['family'] = '<span class="text-success"><i class="fas fa-check"></i></span>';
-                $score += 1;
-            } else {
-                $reqs['family'] = '<span class="text-danger"><i class="fas fa-times"></i></span>';;
-            }
-            $summary = $summary . '• Certificado parentesco: &nbsp;'.$reqs['family'].'<br/>';
-        }
-
-
-        if ($amount == 0) {
-            return [0, 0, 0, $summary];
-        }
-
-        $ponderate = ($score/$amount)*100;
-
-        return [$amount, $score, $ponderate, $summary];
-
-    }
-
     /**
      * Generate a list of registries matching the specified query.
      *
@@ -233,8 +84,8 @@ class ApplicationController extends Controller {
     public function store(Request $request) {
 
         $rules = array(
-            'filling_number' => 'required|numeric',
-            'filling_date' => 'required|date',
+            'filling_number' => 'required',
+            'filling_date' => 'date',
             'application_type' => 'required|numeric',
             'application_target' => 'required|numeric',
             'employee_cc' => 'required|numeric',
@@ -298,8 +149,8 @@ class ApplicationController extends Controller {
     public function meta_store(Request $request) {
 
         $rules = array(
-            'filling_number' => 'required|numeric',
-            'filling_date' => 'required|date',
+            'filling_number' => 'required',
+            'filling_date' => 'date|nullable',
             'application_type' => 'required|numeric',
             'application_target' => 'required|numeric',
             'employee' => 'required|numeric',
@@ -362,7 +213,7 @@ class ApplicationController extends Controller {
      */
     public function edit(Application $application) {
 
-        return \response(view('applications.edit', ['data' => $application]));
+        return \response(view('applications.show', ['data' => $application]));
 
     }
 
@@ -376,8 +227,8 @@ class ApplicationController extends Controller {
     public function update(Request $request, Application $application) {
 
         $rules = array(
-            'filling_number' => 'required|numeric',
-            'filling_date' => 'required|date',
+            'filling_number' => 'required',
+            'filling_date' => 'date|nullable',
             'application_type' => 'required|numeric',
             'application_target' => 'required|numeric',
             'employee_cc' => 'required|numeric',
@@ -391,13 +242,13 @@ class ApplicationController extends Controller {
             echo $validator -> errors();
             echo var_dump($request -> all());
             die();
-            return \redirect(route('applications.edit', $application -> id)) -> withErrors($validator) -> withInput($request -> all());
+            return \redirect(route('applications.show', $application -> id)) -> withErrors($validator) -> withInput($request -> all());
 
         }
 
         $employee_lookup = Employee::firstWhere('document', $request -> employee_cc);
         if (is_null($employee_lookup)) {
-            return \redirect(route('applications.edit', $application -> id)) -> with('wrong-cc', true);
+            return \redirect(route('applications.show', $application -> id)) -> with('wrong-cc', true);
         }
 
         $employee = $employee_lookup -> id;
@@ -421,7 +272,7 @@ class ApplicationController extends Controller {
             $application -> beneficiary_name = $employee_lookup -> name;
         } else {
             if (!$request -> beneficiary_document || !$request -> beneficiary_name) {
-                return \redirect(route('applications.edit')) -> with('no-benefit', true);
+                return \redirect(route('applications.show')) -> with('no-benefit', true);
             }
             $application -> beneficiary_document = $request -> beneficiary_document;
             $application -> beneficiary_name = $request -> beneficiary_name;
@@ -429,7 +280,7 @@ class ApplicationController extends Controller {
 
         $application -> save();
 
-        return \redirect(route('applications.index')) -> with('edit-ok', true);
+        return \redirect(route('applications.show', $application -> id)) -> with('edit-ok', true);
 
     }
 

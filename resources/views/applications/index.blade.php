@@ -50,14 +50,14 @@
     <div class="row">
         <div class="col">
             <div class="card">
-                @if (isset($nores))
+                @if (isset($nores) || $data -> isEmpty())
                         <br/><br/><br/>
                         <h1 class="title text-center justify-content-center">
                             <i class="fas fa-sad-tear" style="font-size: 60px"></i>
                         </h1>
                         <br/>
                         <h2 class="title text-center justify-content-center">
-                            No se encontraron resultados para esa consulta.
+                            No se encontraron resultados.
                         </h2>
                         <br/><br/><br/>
                 @else
@@ -82,16 +82,20 @@
                         </thead>
                         <tbody class="list" id="data-list">
                             @foreach($data as $entry)
-                            @php($employee = \App\Models\Employee::firstWhere('id', $entry -> employee))
-                            @php($pond_req = \App\Http\Controllers\ApplicationController::ponderate_requirements($entry, $employee))
-                            @php($pond_opt = \App\Http\Controllers\ApplicationController::ponderate_conditionals($entry, $employee))
-                            @php($score = \App\Http\Controllers\ApplicationController::calculate_score($entry, $employee))
+                            @php($employee = $entry -> employee())
+                            @php($pond_req = $entry -> mandatory_requirements)
+                            @php($pond_opt = $entry -> conditional_requirements)
+                            @php($score = $entry -> score)
                             <tr>
                                 <td scope="row">
                                     {{ $entry -> filling_number }}
                                 </td>
                                 <td scope="row">
-                                    {{ substr($entry -> filling_date, 0, 10) }}
+                                    @if(isset($entry -> filling_date) && $entry -> filling_date != null)
+                                        {{ substr($entry -> filling_date, 0, 10) }}
+                                    @else
+                                        N/A
+                                    @endif
                                 </td>
                                 <td scope="row">
                                     {{ \App\Models\Employee::firstWhere('id', $entry -> employee) -> name }}
@@ -106,45 +110,37 @@
                                     $ {{ number_format($entry -> requested_money, 2, ',', '.') }}
                                 </td>
                                 <td>
-                                    <div class="d-flex align-items-center">
+                                    <button class="d-flex align-items-center btn btn-link text-default" data-container="body" data-toggle="popover" data-color="secondary" data-placement="left" data-html="true" data-content="{{ $pond_req[3] }}">
                                         <span class="completion mr-2"> {{ $pond_req[1] }}/{{ $pond_req[0] }} </span>
                                         <div>
-                                            <div class="progress" style="width: 75px !important;">
+                                            <div class="progress" style="width: 70px !important;">
                                                 <div class="progress-bar @if($pond_req[1] == $pond_req[0]) bg-success @else bg-danger @endif" role="progressbar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100" style="width: {{ $pond_req[2] }}%;"></div>
                                             </div>
                                         </div>
-                                        &nbsp;&nbsp;
-                                        <button class="btn btn-outline-primary btn-sm" data-container="body" data-toggle="popover" data-color="secondary" data-placement="left" data-html="true" data-content="{{ $pond_req[3] }}">
-                                            <i class="fas fa-question"></i>
-                                        </button>
-                                    </div>
+                                    </button>
                                 </td>
                                 <td>
-                                    <div class="d-flex align-items-center">
+                                    <button class="d-flex align-items-center btn btn-link text-default" data-container="body" data-toggle="popover" data-color="secondary" data-placement="left" data-html="true" data-content="{{ $pond_opt[3] }}">
                                         <span class="completion mr-2"> @if($pond_opt[0] == 0) <span class="text-gray">No aplica</span> @else {{ $pond_opt[1] }}/{{ $pond_opt[0] }} @endif </span>
                                         @if($pond_opt[0] != 0)
                                         <div>
-                                            <div class="progress" style="width: 75px !important;">
+                                            <div class="progress" style="width: 70px !important;">
                                                 <div class="progress-bar @if($pond_opt[1] == $pond_opt[0]) bg-success @else bg-danger @endif" role="progressbar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100" style="width: {{ $pond_opt[2] }}%;"></div>
                                             </div>
                                         </div>
-                                        &nbsp;&nbsp;
-                                        <button class="btn btn-outline-primary btn-sm" data-container="body" data-toggle="popover" data-color="secondary" data-placement="left" data-html="true" data-content="{{ $pond_opt[3] }}">
-                                            <i class="fas fa-question"></i>
-                                        </button>
                                         @endif
-                                    </div>
+                                    </button>
                                 </td>
                                 <td>
-                                    <span class="badge badge-dot mr-4">
+                                    <button class="badge badge-dot mr-4 btn btn-link text-default" data-container="body" data-toggle="popover" data-color="secondary" data-placement="left" data-html="true" data-content="{{ $score[1] }}">
                                         <i class=" @if($score[0] >= 1) bg-success @else bg-danger @endif "></i>
-                                        <span class="status"> @if($score[0] >= 1) {{ $score[0] }} puntos&nbsp;&nbsp; @else No cumple @endif </span>
-                                    </span>
-                                    <button class="btn btn-outline-primary btn-sm" data-container="body" data-toggle="popover" data-color="secondary" data-placement="left" data-html="true" data-content="{{ $score[1] }}">
-                                        <i class="fas fa-question"></i>
+                                        <span class="status"> @if($score[0] >= 1) {{ $score[0] }} @else N/A @endif </span>
                                     </button>
                                 </td>
                                 <td class="text-center">
+                                    <a href="{{ route('applications.show', $entry -> id) }}" class="btn btn-primary btn-icon-only btn-sm" data-toggle="tooltip" data-placement="bottom" title="Visualizar esta solicitud">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
                                     <a href="{{ route('applications.edit', $entry -> id) }}" class="btn btn-info btn-icon-only btn-sm" data-toggle="tooltip" data-placement="bottom" title="Editar esta solicitud">
                                         <i class="fas fa-pencil"></i>
                                     </a>

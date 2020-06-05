@@ -30,13 +30,19 @@ class ApplicationTargetsSeeder extends Seeder {
         ]);
 
         DB::table('application_targets') -> insert([
-            'name' => 'Profesional',
+            'name' => 'Técnico',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
 
         DB::table('application_targets') -> insert([
             'name' => 'Tecnológica',
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
+        ]);
+
+        DB::table('application_targets') -> insert([
+            'name' => 'Profesional',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
@@ -54,7 +60,7 @@ class ApplicationTargetsSeeder extends Seeder {
         ]);
 
         DB::table('application_targets') -> insert([
-            'name' => 'Postdoctorado',
+            'name' => 'Doctorado',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);

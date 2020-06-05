@@ -20,20 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b75a7382-6a40-460c-a0ec-1705310a8b8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AssistantController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/applications/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/assistant/aux/employee-list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/assistant/basic.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/assistant/employee-selector.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/laravel-idea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ide_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ide_helper_models.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ApplicationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ApplicationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Application.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Application.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_28_174543_create_applications_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_28_174543_create_applications_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/ApplicationTargetsSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ApplicationTargetsSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/applications/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/applications/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/applications/edit.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/applications/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/applications/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/employees/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employees/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/applications/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/applications/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assistant/basic.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/assistant/basic.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,6 +150,15 @@
       <path value="$PROJECT_DIR$/vendor/psr/log" />
       <path value="$PROJECT_DIR$/vendor/sebastian/version" />
       <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper" />
+      <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
     </include_path>
   </component>
   <component name="ProjectId" id="1cYSzqOdTIvQUP1Q7nI5NcGWwwB" />
@@ -166,6 +175,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.data.extractors.current.id" value="Markdown-Groovy.md.groovy" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -216,7 +226,7 @@
       <workItem from="1590783397963" duration="719000" />
       <workItem from="1590795459050" duration="6473000" />
       <workItem from="1590985617311" duration="54914000" />
-      <workItem from="1591316111335" duration="20991000" />
+      <workItem from="1591316111335" duration="35243000" />
     </task>
     <servers />
   </component>
@@ -243,6 +253,10 @@
     </state>
     <state x="560" y="226" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1003/-1920.23.1920.1057/1920.23.1920.1057@0.23.1920.1003" timestamp="1591316158431" />
     <state x="560" y="250" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1124@0.23.1920.1124" timestamp="1590707537893" />
+    <state x="721" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591389011949">
+      <screen x="0" y="23" width="1920" height="1003" />
+    </state>
+    <state x="721" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.1003/-1920.23.1920.1057/1920.23.1920.1057@0.23.1920.1003" timestamp="1591389011949" />
     <state x="698" y="338" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590990760981">
       <screen x="0" y="23" width="1920" height="1122" />
     </state>
