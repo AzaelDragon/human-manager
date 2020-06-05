@@ -13,40 +13,52 @@ class ApplicationController extends Controller {
 
     public static function calculate_score(Application $application, Employee $employee) {
 
-        $level_score = ($application -> application_target <= 4) ? 100 : 80;
+        $base_mandatory = self::ponderate_requirements($application, $employee);
+        $optional_mandatory = self::ponderate_conditionals($application, $employee);
 
-        $parsed_date = new \DateTime($employee -> employment_date);
-        $years_diff = $parsed_date -> diff(Carbon::now()) -> y;
+        if ($base_mandatory[0] == $base_mandatory[1] && $optional_mandatory[0] == $optional_mandatory[1]) {
 
-        if ($years_diff < 2)
-            $years_score = 10;
-        else if ($years_diff >= 2 && $years_diff <= 4)
-            $years_score = 25;
-        else if ($years_diff >= 5 && $years_diff <= 7)
-            $years_score = 50;
-        else if ($years_diff >= 8 && $years_diff <= 10)
-            $years_score = 75;
-        else
-            $years_score = 100;
+            $level_score = ($application->application_target <= 4) ? 100 : 80;
 
-        $minimum_wage = 980657;
-        $adjusted_wage = $employee -> wage/$minimum_wage;
+            $parsed_date = new \DateTime($employee->employment_date);
+            $years_diff = $parsed_date->diff(Carbon::now())->y;
 
-        if ($adjusted_wage < 3.0)
-            $wage_score = 100;
-        else if ($adjusted_wage >= 3.0 && $adjusted_wage <= 5.0)
-            $wage_score = 75;
-        else if ($adjusted_wage > 5.0 && $adjusted_wage < 8.0)
-            $wage_score = 50;
-        else
-            $wage_score = 25;
+            if ($years_diff < 2)
+                $years_score = 10;
+            else if ($years_diff >= 2 && $years_diff <= 4)
+                $years_score = 25;
+            else if ($years_diff >= 5 && $years_diff <= 7)
+                $years_score = 50;
+            else if ($years_diff >= 8 && $years_diff <= 10)
+                $years_score = 75;
+            else
+                $years_score = 100;
 
-        $total = ($level_score * 0.3) + ($years_score * 0.35) + ($wage_score * 0.35);
-        $summary = '• Antigüedad: '.$years_diff.' ('.$years_score.' pts)</br>';
-        $summary .= '• Nivel: '. ApplicationTarget::firstWhere('id', $application -> application_target) -> name .' ('.$level_score.' pts)</br>';
-        $summary .= '• Salario: '.explode('.', $adjusted_wage)[0].' SM ('.$wage_score.' pts)</br>';
+            $minimum_wage = 980657;
+            $adjusted_wage = $employee->wage / $minimum_wage;
 
-        return [$total, $summary];
+            if ($adjusted_wage < 3.0)
+                $wage_score = 100;
+            else if ($adjusted_wage >= 3.0 && $adjusted_wage <= 5.0)
+                $wage_score = 75;
+            else if ($adjusted_wage > 5.0 && $adjusted_wage < 8.0)
+                $wage_score = 50;
+            else
+                $wage_score = 25;
+
+            $total = ($level_score * 0.3) + ($years_score * 0.35) + ($wage_score * 0.35);
+            $summary = '• Antigüedad: ' . $years_diff . ' (' . $years_score . ' pts)</br>';
+            $summary .= '• Nivel: ' . ApplicationTarget::firstWhere('id', $application->application_target)->name . ' (' . $level_score . ' pts)</br>';
+            $summary .= '• Salario: ' . explode('.', $adjusted_wage)[0] . ' SM (' . $wage_score . ' pts)</br>';
+
+            return [$total, $summary];
+
+        } else {
+
+            $summary = '• Esta solicitud no cumple con todos los requerimientos solicitados.';
+            return [0, $summary];
+
+        }
 
     }
 
@@ -234,8 +246,6 @@ class ApplicationController extends Controller {
         if ($validator -> fails()) {
 
             echo $validator -> errors();
-            echo var_dump($request -> all());
-            die();
             return \redirect(route('applications.create')) -> withErrors($validator) -> withInput($request -> all());
 
         }
@@ -276,6 +286,71 @@ class ApplicationController extends Controller {
         $application -> save();
 
         return \redirect(route('applications.index')) -> with('create-ok', true);
+
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function meta_store(Request $request) {
+
+        $rules = array(
+            'filling_number' => 'required|numeric',
+            'filling_date' => 'required|date',
+            'application_type' => 'required|numeric',
+            'application_target' => 'required|numeric',
+            'employee' => 'required|numeric',
+            'requested_money' => 'required|numeric',
+        );
+
+        $validator = Validator::make($request -> all(), $rules);
+
+        if ($validator -> fails()) {
+
+            echo $validator -> errors();
+            return \redirect(route('assistant.basic', $request -> employee)) -> withErrors($validator) -> withInput($request -> all());
+
+        }
+
+        $employee_lookup = Employee::firstWhere('id', $request -> employee);
+        if (is_null($employee_lookup)) {
+            return \redirect(route('assistant.basic')) -> with('wrong-cc', true);
+        }
+
+        $employee = $employee_lookup -> id;
+
+        $application = new Application();
+        $application -> filling_number = $request -> filling_number;
+        $application -> filling_date = $request -> filling_date;
+        $application -> application_type = $request -> application_type;
+        $application -> application_target = $request -> application_target;
+        $application -> employee = $employee;
+        $application -> requested_money = $request -> requested_money;
+        $application -> comments = (is_null($request -> comments)) ? '' : $request -> comments;
+        $application -> has_interest_letter = ($request -> has_interest_letter == 'on') ? 1 : 0;
+        $application -> has_education_signup = ($request -> has_education_signup == 'on') ? 1 : 0;
+        $application -> has_family_certificate = ($request -> has_family_certificate == 'on') ? 1 : 0;
+        $application -> has_past_semester_approbation = ($request -> has_past_semester_approbation == 'on') ? 1 : 0;
+        $application -> has_juramented_declaration = ($request -> has_juramented_declaration == 'on') ? 1 : 0;
+        $application -> last_year_beneficiary = ($request -> last_year_beneficiary == 'on') ? 1 : 0;
+
+        if ($request -> application_type == 1) {
+            $application -> beneficiary_document = $employee_lookup -> document;
+            $application -> beneficiary_name = $employee_lookup -> name;
+        } else {
+            if (!$request -> beneficiary_document || !$request -> beneficiary_name) {
+                return \redirect(route('assistant.basic')) -> with('no-benefit', true);
+            }
+            $application -> beneficiary_document = $request -> beneficiary_document;
+            $application -> beneficiary_name = $request -> beneficiary_name;
+        }
+
+        $application -> save();
+
+        return \redirect(route('applications.show', $application -> id));
 
     }
 
@@ -368,6 +443,18 @@ class ApplicationController extends Controller {
 
         $application -> delete();
         return \redirect(route('applications.index')) -> with('delete-ok', true);
+
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  \App\Models\Application  $application
+     * @return \Illuminate\Http\Response
+     */
+    public function show(Application $application) {
+
+        return \response(view('applications.show', ['data' => $application]));
 
     }
 

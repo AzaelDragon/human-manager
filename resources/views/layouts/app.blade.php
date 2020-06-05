@@ -31,6 +31,12 @@
                                 <span class="nav-link-text"> Vista general </span>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link @if($active == 'assistant') active @endif " href="{{ route('assistant.employee') }}">
+                                <i class="fas fa-chart-network text-primary"></i>
+                                <span class="nav-link-text"> Asistente </span>
+                            </a>
+                        </li>
                     </ul>
                     <hr class="my-3">
                     <h6 class="navbar-heading p-0 text-muted">

@@ -117,7 +117,7 @@
                                     <button class="btn @if($application_count == 0) btn-dark @else btn-success @endif btn-icon-only btn-sm lookup-trigger" data-toggle="tooltip" data-placement="bottom" data-lookid="{{ $entry -> document }}" title="Buscar solicitudes de este empleado" @if($application_count == 0) disabled @endif>
                                         <i class="fas fa-search"></i>
                                     </button>
-                                    <a href="" class="btn btn-primary btn-icon-only btn-sm" data-toggle="tooltip" data-placement="bottom" title="Crear una solicitud para este empleado">
+                                    <a href="{{ route('assistant.basic', $entry -> id) }}" class="btn btn-primary btn-icon-only btn-sm" data-toggle="tooltip" data-placement="bottom" title="Crear una solicitud para este empleado">
                                         <i class="fas fa-chart-network"></i>
                                     </a>
                                     <a href="{{ route('employees.edit', $entry -> id) }}" class="btn btn-info btn-icon-only btn-sm" data-toggle="tooltip" data-placement="bottom" title="Editar este empleado">

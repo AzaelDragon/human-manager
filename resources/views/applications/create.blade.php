@@ -19,7 +19,7 @@
             </button>
         </div>
     @endif
-    <div class=d"row justify-content-center">
+    <div class="row justify-content-center">
         <div class="col-xl-8 order-xl-1">
             <div class="card">
                 <div class="card-header">
@@ -44,7 +44,7 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="filling_date">Fecha de radicado</label>
-                                        <input type="date" id="filling_date" name="filling_date" class="form-control" placeholder="MM-DD-YYYY" value="">
+                                        <input type="date" id="filling_date" name="filling_date" class="form-control" placeholder="MM-DD-AAAA" value="">
                                     </div>
                                 </div>
                             </div>

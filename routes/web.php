@@ -28,4 +28,10 @@ Route::post('applications/search', 'ApplicationController@search') -> name('appl
 Route::get('applications/search', function () {
     return redirect() -> route('applications.index');
 });
-Route::resource('applications', 'ApplicationController') -> except('show');
+Route::resource('applications', 'ApplicationController');
+
+Route::get('assistant/employee', 'AssistantController@employee_selector') -> name('assistant.employee');
+Route::post('assistant/employee', 'AssistantController@employee_lookup') -> name('assistant.employee.lookup');
+Route::post('assistant/store', 'ApplicationController@meta_store') -> name('assistant.store');
+
+Route::get('assistant/basic/{employee}', 'AssistantController@basic_info') -> name('assistant.basic');

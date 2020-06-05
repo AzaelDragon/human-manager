@@ -20,9 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b75a7382-6a40-460c-a0ec-1705310a8b8b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AssistantController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/applications/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/assistant/aux/employee-list.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/assistant/basic.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/assistant/employee-selector.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel-idea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-idea.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ApplicationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ApplicationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/applications/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/applications/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/applications/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/applications/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/employees/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employees/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +174,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -205,7 +216,7 @@
       <workItem from="1590783397963" duration="719000" />
       <workItem from="1590795459050" duration="6473000" />
       <workItem from="1590985617311" duration="54914000" />
-      <workItem from="1591316111335" duration="3024000" />
+      <workItem from="1591316111335" duration="20991000" />
     </task>
     <servers />
   </component>
@@ -237,10 +248,15 @@
     </state>
     <state x="698" y="338" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1122@0.23.1920.1122" timestamp="1590990760981" />
     <state x="698" y="339" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1124@0.23.1920.1124" timestamp="1590987112882" />
-    <state x="698" y="286" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1591071668806">
-      <screen x="0" y="23" width="1920" height="1002" />
+    <state x="698" y="286" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1591322583895">
+      <screen x="0" y="23" width="1920" height="1003" />
     </state>
     <state x="698" y="286" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1920.1002/1920.23.1920.1057@0.23.1920.1002" timestamp="1591071668806" />
+    <state x="698" y="286" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1920.1003/-1920.23.1920.1057/1920.23.1920.1057@0.23.1920.1003" timestamp="1591322583895" />
+    <state x="806" y="440" key="Create Controller" timestamp="1591320509525">
+      <screen x="0" y="23" width="1920" height="1003" />
+    </state>
+    <state x="806" y="440" key="Create Controller/0.23.1920.1003/-1920.23.1920.1057/1920.23.1920.1057@0.23.1920.1003" timestamp="1591320509525" />
     <state x="703" y="456" key="Create Database Migration" timestamp="1590707125273">
       <screen x="0" y="23" width="1920" height="1124" />
     </state>
@@ -265,38 +281,49 @@
       <screen x="0" y="23" width="1920" height="1003" />
     </state>
     <state x="436" y="250" key="IDE.errors.dialog/0.23.1920.1003/-1920.23.1920.1057/1920.23.1920.1057@0.23.1920.1003" timestamp="1591316136441" />
-    <state x="779" y="461" key="NewPhpFileDialog" timestamp="1591051363247">
-      <screen x="0" y="23" width="1920" height="1002" />
+    <state x="779" y="461" key="NewPhpFileDialog" timestamp="1591336532999">
+      <screen x="0" y="23" width="1920" height="1003" />
     </state>
     <state x="779" y="461" key="NewPhpFileDialog/0.23.1920.1002/1920.23.1920.1057@0.23.1920.1002" timestamp="1591051363247" />
+    <state x="779" y="461" key="NewPhpFileDialog/0.23.1920.1003/-1920.23.1920.1057/1920.23.1920.1057@0.23.1920.1003" timestamp="1591336532999" />
     <state x="779" y="514" key="NewPhpFileDialog/0.23.1920.1122@0.23.1920.1122" timestamp="1590990323640" />
     <state x="779" y="515" key="NewPhpFileDialog/0.23.1920.1124@0.23.1920.1124" timestamp="1590888998196" />
-    <state x="490" y="141" width="1339" height="722" key="SettingsEditor" timestamp="1591316567844">
+    <state x="490" y="141" width="1339" height="722" key="SettingsEditor" timestamp="1591323520867">
       <screen x="0" y="23" width="1920" height="1003" />
     </state>
     <state x="116" y="153" width="1339" height="722" key="SettingsEditor/0.23.1920.1002/1920.23.1920.1057@0.23.1920.1002" timestamp="1591046750802" />
-    <state x="490" y="141" key="SettingsEditor/0.23.1920.1003/-1920.23.1920.1057/1920.23.1920.1057@0.23.1920.1003" timestamp="1591316567844" />
+    <state x="490" y="141" key="SettingsEditor/0.23.1920.1003/-1920.23.1920.1057/1920.23.1920.1057@0.23.1920.1003" timestamp="1591323520867" />
     <state x="116" y="169" width="1339" height="751" key="SettingsEditor/0.23.1920.1124@0.23.1920.1124" timestamp="1590985767686" />
-    <state width="566" height="445" key="SwitcherDM" timestamp="1591046564491">
-      <screen x="0" y="23" width="1920" height="1002" />
+    <state width="566" height="446" key="SwitcherDM" timestamp="1591330104747">
+      <screen x="0" y="23" width="1920" height="1003" />
     </state>
     <state width="566" height="445" key="SwitcherDM/0.23.1920.1002/1920.23.1920.1057@0.23.1920.1002" timestamp="1591046564491" />
+    <state width="566" height="446" key="SwitcherDM/0.23.1920.1003/-1920.23.1920.1057/1920.23.1920.1057@0.23.1920.1003" timestamp="1591330104747" />
     <state x="730" y="417" width="460" height="340" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1590955960578">
       <screen x="0" y="23" width="1920" height="1124" />
     </state>
     <state x="730" y="417" width="460" height="340" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.23.1920.1124@0.23.1920.1124" timestamp="1590955960578" />
+    <state x="449" y="23" width="816" height="984" key="dock-window-1" timestamp="1591337143550">
+      <screen x="0" y="23" width="1920" height="1003" />
+    </state>
+    <state x="449" y="23" width="816" height="984" key="dock-window-1/0.23.1920.1003/-1920.23.1920.1057/1920.23.1920.1057@0.23.1920.1003" timestamp="1591337143550" />
     <state x="668" y="132" width="584" height="783" key="find.popup" timestamp="1591125114963">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="668" y="132" width="584" height="783" key="find.popup/0.23.1920.1057/1920.23.1920.1002@0.23.1920.1057" timestamp="1591125114963" />
+    <state width="600" height="440" key="javadoc.popup" timestamp="1591328341260">
+      <screen x="0" y="23" width="1920" height="1003" />
+    </state>
+    <state width="600" height="440" key="javadoc.popup/0.23.1920.1003/-1920.23.1920.1057/1920.23.1920.1057@0.23.1920.1003" timestamp="1591328341260" />
     <state x="625" y="242" key="run.anything.popup" timestamp="1591066726280">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
     <state x="625" y="242" key="run.anything.popup/0.23.1920.1002/1920.23.1920.1057@0.23.1920.1002" timestamp="1591066726280" />
-    <state x="625" y="248" width="670" height="603" key="search.everywhere.popup" timestamp="1591066121013">
-      <screen x="0" y="23" width="1920" height="1002" />
+    <state x="625" y="248" width="670" height="604" key="search.everywhere.popup" timestamp="1591326628976">
+      <screen x="0" y="23" width="1920" height="1003" />
     </state>
     <state x="625" y="248" width="670" height="603" key="search.everywhere.popup/0.23.1920.1002/1920.23.1920.1057@0.23.1920.1002" timestamp="1591066121013" />
+    <state x="625" y="248" width="670" height="604" key="search.everywhere.popup/0.23.1920.1003/-1920.23.1920.1057/1920.23.1920.1057@0.23.1920.1003" timestamp="1591326628976" />
     <state x="625" y="275" width="670" height="675" key="search.everywhere.popup/0.23.1920.1122@0.23.1920.1122" timestamp="1591030894679" />
     <state x="625" y="275" width="670" height="676" key="search.everywhere.popup/0.23.1920.1124@0.23.1920.1124" timestamp="1590891165917" />
   </component>

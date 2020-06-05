@@ -137,8 +137,8 @@
                                 </td>
                                 <td>
                                     <span class="badge badge-dot mr-4">
-                                        <i class=" @if($score >= 67) bg-success @elseif($score[0] < 67 && $score[0] >= 33) bg-warning @else bg-danger @endif "></i>
-                                        <span class="status"> {{ $score[0] }} </span>
+                                        <i class=" @if($score[0] >= 1) bg-success @else bg-danger @endif "></i>
+                                        <span class="status"> @if($score[0] >= 1) {{ $score[0] }} puntos&nbsp;&nbsp; @else No cumple @endif </span>
                                     </span>
                                     <button class="btn btn-outline-primary btn-sm" data-container="body" data-toggle="popover" data-color="secondary" data-placement="left" data-html="true" data-content="{{ $score[1] }}">
                                         <i class="fas fa-question"></i>
