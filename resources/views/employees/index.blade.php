@@ -80,6 +80,7 @@
                         </thead>
                         <tbody class="list" id="data-list">
                             @foreach($data as $entry)
+                            @php($application_count = \App\Models\Application::where('employee', $entry -> id) -> count())
                             <tr>
                                 <td scope="row">
                                     {{ $entry -> document }}
@@ -108,12 +109,12 @@
                                 </td>
                                 <td>
                                     <span class="badge badge-dot mr-4">
-                                        <i class=" @if(\App\Models\Application::where('employee', $entry -> id) -> count() <= 2) bg-success @else bg-danger @endif "></i>
-                                        <span class="status"> {{ \App\Models\Application::where('employee', $entry -> id) -> count() }} </span>
+                                        <i class=" @if($application_count <= 2) bg-success @else bg-danger @endif "></i>
+                                        <span class="status"> {{ $application_count }} </span>
                                     </span>
                                 </td>
                                 <td class="text-center">
-                                    <button class="btn btn-success btn-icon-only btn-sm lookup-trigger" data-toggle="tooltip" data-placement="bottom" data-lookid="{{ $entry -> document }}" title="Buscar solicitudes de este empleado" @if(\App\Models\Application::where('employee', $entry -> id) -> count() == 0) disabled @endif>
+                                    <button class="btn @if($application_count == 0) btn-dark @else btn-success @endif btn-icon-only btn-sm lookup-trigger" data-toggle="tooltip" data-placement="bottom" data-lookid="{{ $entry -> document }}" title="Buscar solicitudes de este empleado" @if($application_count == 0) disabled @endif>
                                         <i class="fas fa-search"></i>
                                     </button>
                                     <a href="" class="btn btn-primary btn-icon-only btn-sm" data-toggle="tooltip" data-placement="bottom" title="Crear una solicitud para este empleado">

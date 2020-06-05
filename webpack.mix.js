@@ -18,17 +18,12 @@ mix.styles([
     'resources/css/nucleo.css',
     'resources/css/argon.css',
     'resources/css/open-sans.css',
-    'resources/css/awesome.css'
-], 'public/css/all.css')
+    'resources/css/awesome.css',
+    'resources/css/animate.min.css'
+], 'public/css/app.css')
 mix.copyDirectory('resources/webfonts', 'public/webfonts')
 mix.copyDirectory('resources/img', 'public/img')
 mix.scripts([
     'resources/js/argon.js',
-    'resources/js/bootstrap.bundle.min.js',
-    'resources/js/Chart.extension.js',
-    'resources/js/Chart.min.js',
-    'resources/js/jquery.min.js',
-    'resources/js/jquery.scrollbar.min.js',
-    'resources/js/jquery-scrollLock.min.js',
-    'resources/js/js.cookie.js'
-], 'public/js/all.js')
+], 'public/js/scripts.js')
+mix.js(['resources/js/app.js'], 'public/js/app.js').sourceMaps()

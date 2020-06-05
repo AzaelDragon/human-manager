@@ -7,11 +7,11 @@
         <meta name="author" content="David S. García <Azæl>"/>
         <meta name="_token" content="{{ csrf_token() }}"/>
         <link rel="icon" href="{{ asset('favicon.png') }}" type="image/png"/>
-        <link rel="stylesheet" href="{{ asset('css/all.css') }}" type="text/css"/>
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}" type="text/css"/>
         <title> Humano - @yield('title')</title>
     </head>
     <body>
-        <nav class="sidenav navbar navbar-vertical  fixed-left  navbar-expand-xs navbar-light bg-white" id="sidenav-main">
+        <nav class="sidenav navbar navbar-vertical fixed-left navbar-expand-xs navbar-light bg-white" id="sidenav-main">
             <div class="scrollbar-inner">
             <div class="sidenav-header  align-items-center">
                 <a class="navbar-brand" href="{{ route('home') }}">
@@ -116,11 +116,8 @@
             </div>
         </div>
         @yield('meta-content')
-        <script src="{{ asset('js/jquery.min.js') }}" type="text/javascript"></script>
-        <script src="{{ asset('js/js.cookie.js') }}" type="text/javascript"></script>
-        <script src="{{ asset('js/bootstrap.bundle.min.js') }}" type="text/javascript"></script>
-        <script src="{{ asset('js/all.js') }}" type="text/javascript"></script>
-        <script src="{{ asset('js/swal.js') }}" type="text/javascript"></script>
+        <script src="{{ asset('js/app.js') }}" type="text/javascript"></script>
+        <script src="{{ asset('js/scripts.js') }}" type="text/javascript"></script>
         @yield('scripts')
     </body>
 </html>

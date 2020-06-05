@@ -20,20 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b75a7382-6a40-460c-a0ec-1705310a8b8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ApplicationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ApplicationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_28_172813_create_employees_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_28_172813_create_employees_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_28_174543_create_applications_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_28_174543_create_applications_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/EmployeesSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/EmployeesSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/applications/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/applications/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/applications/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/applications/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/applications/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/applications/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/employees/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employees/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/employees/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employees/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/employees/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employees/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,17 +142,20 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1cYSzqOdTIvQUP1Q7nI5NcGWwwB" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/applications" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -171,22 +163,22 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views/applications" />
-      <recent name="$PROJECT_DIR$/resources/views/employees" />
-      <recent name="$PROJECT_DIR$/public/js" />
-      <recent name="$PROJECT_DIR$/public/img/brand" />
-      <recent name="$PROJECT_DIR$/resources/css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/js" />
       <recent name="$PROJECT_DIR$/public/js" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/resources/views/employees" />
       <recent name="$PROJECT_DIR$/resources/views/index" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/js" />
       <recent name="$PROJECT_DIR$/resources/css" />
+      <recent name="$PROJECT_DIR$/resources/views/applications" />
+      <recent name="$PROJECT_DIR$/resources/views/employees" />
+      <recent name="$PROJECT_DIR$/public/js" />
     </key>
   </component>
   <component name="RunManager">
@@ -213,7 +205,7 @@
       <workItem from="1590783397963" duration="719000" />
       <workItem from="1590795459050" duration="6473000" />
       <workItem from="1590985617311" duration="54914000" />
-      <workItem from="1591316111335" duration="235000" />
+      <workItem from="1591316111335" duration="3024000" />
     </task>
     <servers />
   </component>
@@ -230,6 +222,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="560" y="226" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591316158431">
@@ -276,11 +271,11 @@
     <state x="779" y="461" key="NewPhpFileDialog/0.23.1920.1002/1920.23.1920.1057@0.23.1920.1002" timestamp="1591051363247" />
     <state x="779" y="514" key="NewPhpFileDialog/0.23.1920.1122@0.23.1920.1122" timestamp="1590990323640" />
     <state x="779" y="515" key="NewPhpFileDialog/0.23.1920.1124@0.23.1920.1124" timestamp="1590888998196" />
-    <state x="490" y="141" width="1339" height="722" key="SettingsEditor" timestamp="1591316346333">
+    <state x="490" y="141" width="1339" height="722" key="SettingsEditor" timestamp="1591316567844">
       <screen x="0" y="23" width="1920" height="1003" />
     </state>
     <state x="116" y="153" width="1339" height="722" key="SettingsEditor/0.23.1920.1002/1920.23.1920.1057@0.23.1920.1002" timestamp="1591046750802" />
-    <state x="490" y="141" key="SettingsEditor/0.23.1920.1003/-1920.23.1920.1057/1920.23.1920.1057@0.23.1920.1003" timestamp="1591316346333" />
+    <state x="490" y="141" key="SettingsEditor/0.23.1920.1003/-1920.23.1920.1057/1920.23.1920.1057@0.23.1920.1003" timestamp="1591316567844" />
     <state x="116" y="169" width="1339" height="751" key="SettingsEditor/0.23.1920.1124@0.23.1920.1124" timestamp="1590985767686" />
     <state width="566" height="445" key="SwitcherDM" timestamp="1591046564491">
       <screen x="0" y="23" width="1920" height="1002" />
