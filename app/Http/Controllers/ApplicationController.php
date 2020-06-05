@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Application;
+use App\Models\ApplicationTarget;
 use App\Models\Employee;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -10,7 +11,7 @@ use Illuminate\Support\Facades\Validator;
 
 class ApplicationController extends Controller {
 
-    public static function calculate_score(Employee $employee, Application $application) {
+    public static function calculate_score(Application $application, Employee $employee) {
 
         $level_score = ($application -> application_target <= 4) ? 100 : 80;
 
@@ -40,23 +41,110 @@ class ApplicationController extends Controller {
         else
             $wage_score = 25;
 
-        return ($level_score * 0.3) + ($years_score * 0.35) + ($wage_score * 0.35);
+        $total = ($level_score * 0.3) + ($years_score * 0.35) + ($wage_score * 0.35);
+        $summary = '• Antigüedad: '.$years_diff.' ('.$years_score.' pts)</br>';
+        $summary .= '• Nivel: '. ApplicationTarget::firstWhere('id', $application -> application_target) -> name .' ('.$level_score.' pts)</br>';
+        $summary .= '• Salario: '.explode('.', $adjusted_wage)[0].' SM ('.$wage_score.' pts)</br>';
+
+        return [$total, $summary];
 
     }
 
-    public static function ponderate_requirements(Application $application) {
+    public static function ponderate_requirements(Application $application, Employee $employee) {
 
-        return $application -> has_interest_letter
-            + $application -> has_education_signup
-            + $application -> has_juramented_declaration;
+        $amount = 5;
+        $score = 0;
+        $reqs = [];
+
+        $parsed_date = new \DateTime($employee -> employment_date);
+        $years_diff = $parsed_date -> diff(Carbon::now()) -> y;
+
+        if ($years_diff >= 1) {
+            $score += 1;
+            $reqs['year'] = '<span class="text-success"><i class="fas fa-check"></i></span>';
+        } else {
+            $reqs['year'] = '<span class="text-danger"><i class="fas fa-times"></i></span>';
+        }
+
+        if ($employee -> performance_score >= 90) {
+            $score += 1;
+            $reqs['score'] = '<span class="text-success"><i class="fas fa-check"></i></span>';
+        } else {
+            $reqs['score'] = '<span class="text-danger"><i class="fas fa-times"></i></span>';
+        }
+
+        if ($application -> has_interest_letter == 1) {
+            $score += 1;
+            $reqs['interest'] = '<span class="text-success"><i class="fas fa-check"></i></span>';
+        } else {
+            $reqs['interest'] = '<span class="text-danger"><i class="fas fa-times"></i></span>';
+        }
+
+        if ($application -> has_education_signup == 1) {
+            $score += 1;
+            $reqs['signup'] = '<span class="text-success"><i class="fas fa-check"></i></span>';
+        } else {
+            $reqs['signup'] = '<span class="text-danger"><i class="fas fa-times"></i></span>';
+        }
+
+        if ($application -> has_juramented_declaration == 1) {
+            $score += 1;
+            $reqs['juramented'] = '<span class="text-success"><i class="fas fa-check"></i></span>';
+        } else {
+            $reqs['juramented'] = '<span class="text-danger"><i class="fas fa-times"></i></span>';
+        }
+
+        $summary =
+        '• Antigüedad: &nbsp;&nbsp;'.$reqs['year'].'<br/>
+        • Puntaje: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$reqs['score'].'<br/>
+        • Carta: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$reqs['interest'].'<br/>
+        • Certificado: &nbsp;&nbsp;&nbsp;'.$reqs['signup'].'<br/>
+        • Declaración: &nbsp;'.$reqs['juramented'].'<br/>';
+
+        $ponderate = ($score/$amount)*100;
+
+        return [$amount, $score, $ponderate, $summary];
 
     }
 
-    public static function ponderate_optionals(Application $application) {
+    public static function ponderate_conditionals(Application $application, Employee $employee) {
 
-        return $application -> has_family_certificate
-            + $application -> has_past_semester_approbation
-            + $application -> had_benefit_before;
+        $amount = 0;
+        $score = 0;
+        $reqs = [];
+
+        $summary = '';
+
+        if ($application -> last_year_beneficiary == 1) {
+            $amount += 1;
+            if ($application -> has_past_semester_approbation == 1) {
+                $reqs['year'] = '<span class="text-success"><i class="fas fa-check"></i></span>';
+                $score += 1;
+            } else {
+                $reqs['year'] = '<span class="text-danger"><i class="fas fa-times"></i></span>';;
+            }
+            $summary = $summary . '• Aprobación anterior: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$reqs['year'].'<br/>';
+        }
+
+        if ($application -> application_type == 2) {
+            $amount += 1;
+            if ($application -> has_family_certificate == 1) {
+                $reqs['family'] = '<span class="text-success"><i class="fas fa-check"></i></span>';
+                $score += 1;
+            } else {
+                $reqs['family'] = '<span class="text-danger"><i class="fas fa-times"></i></span>';;
+            }
+            $summary = $summary . '• Certificado parentesco: &nbsp;'.$reqs['family'].'<br/>';
+        }
+
+
+        if ($amount == 0) {
+            return [0, 0, 0, $summary];
+        }
+
+        $ponderate = ($score/$amount)*100;
+
+        return [$amount, $score, $ponderate, $summary];
 
     }
 
@@ -68,14 +156,24 @@ class ApplicationController extends Controller {
      */
     public function search(Request $request) {
 
-        $query_text = strtoupper($request -> query_text);
+        $query_text = mb_strtoupper($request -> query_text);
 
-        $person_query = Employee::firstWhere('name', 'LIKE', '%'.$query_text.'%');
+        $person_query = Employee::selectRaw('employees.id, employees.name, count(*) application_count')
+            -> join('applications', 'applications.employee', '=', 'employees.id')
+            -> groupBy('employees.name')
+            -> orderBy('application_count')
+            -> where('name', 'LIKE', '%'.$query_text.'%')
+            -> first();
+
         $potential_person = (is_null($person_query)) ? 0 : $person_query -> id;
+
+        $second_person_query = Employee::firstWhere('document', 'LIKE', '%'.$query_text.'%');
+        $second_potential_person = (is_null($second_person_query)) ? 0 : $second_person_query -> id;
 
         $number_query = Application::where('filling_number', 'LIKE', '%'.$query_text.'%')
             -> orWhere('filling_date', 'LIKE', '%'.$query_text.'%')
-            -> orWhere('employee', 'LIKE', $potential_person);
+            -> orWhere('employee', '=', $potential_person)
+            -> orWhere('employee', '=', $second_potential_person);
 
         $final_query = $number_query -> paginate(14);
 
@@ -157,12 +255,24 @@ class ApplicationController extends Controller {
         $application -> employee = $employee;
         $application -> requested_money = $request -> requested_money;
         $application -> comments = (is_null($request -> comments)) ? '' : $request -> comments;
-        $application -> had_benefit_before = ($request -> had_benefit_before == 'on') ? 1 : 0;
         $application -> has_interest_letter = ($request -> has_interest_letter == 'on') ? 1 : 0;
         $application -> has_education_signup = ($request -> has_education_signup == 'on') ? 1 : 0;
         $application -> has_family_certificate = ($request -> has_family_certificate == 'on') ? 1 : 0;
         $application -> has_past_semester_approbation = ($request -> has_past_semester_approbation == 'on') ? 1 : 0;
         $application -> has_juramented_declaration = ($request -> has_juramented_declaration == 'on') ? 1 : 0;
+        $application -> last_year_beneficiary = ($request -> last_year_beneficiary == 'on') ? 1 : 0;
+
+        if ($request -> application_type == 1) {
+            $application -> beneficiary_document = $employee_lookup -> document;
+            $application -> beneficiary_name = $employee_lookup -> name;
+        } else {
+            if (!$request -> beneficiary_document || !$request -> beneficiary_name) {
+                return \redirect(route('applications.create')) -> with('no-benefit', true);
+            }
+            $application -> beneficiary_document = $request -> beneficiary_document;
+            $application -> beneficiary_name = $request -> beneficiary_name;
+        }
+
         $application -> save();
 
         return \redirect(route('applications.index')) -> with('create-ok', true);
@@ -224,12 +334,24 @@ class ApplicationController extends Controller {
         $application -> employee = $employee;
         $application -> requested_money = $request -> requested_money;
         $application -> comments = (is_null($request -> comments)) ? '' : $request -> comments;
-        $application -> had_benefit_before = ($request -> had_benefit_before == 'on') ? 1 : 0;
         $application -> has_interest_letter = ($request -> has_interest_letter == 'on') ? 1 : 0;
         $application -> has_education_signup = ($request -> has_education_signup == 'on') ? 1 : 0;
         $application -> has_family_certificate = ($request -> has_family_certificate == 'on') ? 1 : 0;
         $application -> has_past_semester_approbation = ($request -> has_past_semester_approbation == 'on') ? 1 : 0;
         $application -> has_juramented_declaration = ($request -> has_juramented_declaration == 'on') ? 1 : 0;
+        $application -> last_year_beneficiary = ($request -> last_year_beneficiary == 'on') ? 1 : 0;
+
+        if ($request -> application_type == 1) {
+            $application -> beneficiary_document = $employee_lookup -> document;
+            $application -> beneficiary_name = $employee_lookup -> name;
+        } else {
+            if (!$request -> beneficiary_document || !$request -> beneficiary_name) {
+                return \redirect(route('applications.edit')) -> with('no-benefit', true);
+            }
+            $application -> beneficiary_document = $request -> beneficiary_document;
+            $application -> beneficiary_name = $request -> beneficiary_name;
+        }
+
         $application -> save();
 
         return \redirect(route('applications.index')) -> with('edit-ok', true);

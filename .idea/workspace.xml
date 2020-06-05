@@ -3,12 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="b75a7382-6a40-460c-a0ec-1705310a8b8b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ApplicationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ApplicationController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_28_172813_create_employees_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_28_172813_create_employees_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_28_174543_create_applications_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_28_174543_create_applications_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/EmployeesSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/EmployeesSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/applications/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/applications/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/applications/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/applications/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/applications/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/applications/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/employees/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employees/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/employees/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employees/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/employees/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employees/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +193,7 @@
       <workItem from="1590705448469" duration="3090000" />
       <workItem from="1590783397963" duration="719000" />
       <workItem from="1590795459050" duration="6473000" />
-      <workItem from="1590985617311" duration="41731000" />
+      <workItem from="1590985617311" duration="54914000" />
     </task>
     <servers />
   </component>
@@ -247,6 +253,10 @@
       <screen x="0" y="23" width="1920" height="1124" />
     </state>
     <state x="730" y="417" width="460" height="340" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.23.1920.1124@0.23.1920.1124" timestamp="1590955960578" />
+    <state x="668" y="132" width="584" height="783" key="find.popup" timestamp="1591125114963">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="668" y="132" width="584" height="783" key="find.popup/0.23.1920.1057/1920.23.1920.1002@0.23.1920.1057" timestamp="1591125114963" />
     <state x="625" y="242" key="run.anything.popup" timestamp="1591066726280">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>

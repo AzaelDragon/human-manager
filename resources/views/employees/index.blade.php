@@ -71,8 +71,7 @@
                             <th scope="col" class="sort" data-sort="document"> Cédula </th>
                             <th scope="col" class="sort" data-sort="name"> Nombre </th>
                             <th scope="col" class="sort" data-sort="perfomance_score"> Desempeño </th>
-                            <th scope="col" class="sort" data-sort="is_administrative"> ¿Admin? </th>
-                            <th scope="col" class="sort" data-sort="is_administrative"> ¿Ben. 2019? </th>
+                            <th scope="col" class="sort" data-sort="is_administrative"> ¿Administrativo? </th>
                             <th scope="col" class="sort" data-sort="employment_date"> Antigüedad </th>
                             <th scope="col" class="sort" data-sort="wage"> Salario </th>
                             <th scope="col" class="sort" data-sort="limit"> Solicitudes </th>
@@ -96,16 +95,9 @@
                                 </td>
                                 <td>
                                     @if($entry -> is_administrative == 1)
-                                        <i class="fas fa-check text-success"></i>
+                                        <i class="fas fa-check text-success"></i> Sí
                                     @else
-                                        <i class="fas fa-times text-danger"></i>
-                                    @endif
-                                </td>
-                                <td>
-                                    @if($entry -> last_year_beneficiary == 1)
-                                        <i class="fas fa-check text-success"></i>
-                                    @else
-                                        <i class="fas fa-times text-danger"></i>
+                                        <i class="fas fa-times text-danger"></i> No
                                     @endif
                                 </td>
                                 <td scope="row">
@@ -121,6 +113,9 @@
                                     </span>
                                 </td>
                                 <td class="text-center">
+                                    <button class="btn btn-success btn-icon-only btn-sm lookup-trigger" data-toggle="tooltip" data-placement="bottom" data-lookid="{{ $entry -> document }}" title="Buscar solicitudes de este empleado" @if(\App\Models\Application::where('employee', $entry -> id) -> count() == 0) disabled @endif>
+                                        <i class="fas fa-search"></i>
+                                    </button>
                                     <a href="" class="btn btn-primary btn-icon-only btn-sm" data-toggle="tooltip" data-placement="bottom" title="Crear una solicitud para este empleado">
                                         <i class="fas fa-chart-network"></i>
                                     </a>
@@ -149,6 +144,10 @@
         @csrf
         @method('DELETE')
     </form>
+    <form action="{{ route('applications.search') }}" method="post" id="lookup-form">
+        @csrf
+        <input type="hidden" id="auxiliar-query" name="query_text" />
+    </form>
 @endsection
 @section('scripts')
     <script type="text/javascript">
@@ -174,6 +173,13 @@
                     $('#delete-form').attr('action', '{{route('employees.index')}}/' + keelId).submit();
                 }
             })
+        });
+    </script>
+    <script type="text/javascript">
+        $('.lookup-trigger').click( function () {
+            var lookupId = $(this).data('lookid');
+            $('#auxiliar-query').val(lookupId);
+            $('#lookup-form').submit();
         });
     </script>
 @endsection

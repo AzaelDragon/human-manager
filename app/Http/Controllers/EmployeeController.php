@@ -31,7 +31,7 @@ class EmployeeController extends Controller {
      */
     public function search(Request $request) {
 
-        $query_text = strtoupper($request -> query_text);
+        $query_text = mb_strtoupper($request -> query_text);
 
         $dni_query = Employee::where('document', 'LIKE', '%'.$query_text.'%') -> orWhere('name', 'LIKE', '%'.$query_text.'%');
         $final_query = $dni_query -> paginate(14);
@@ -89,10 +89,9 @@ class EmployeeController extends Controller {
         $employee = new Employee();
 
         $employee -> document = $request -> get('document');
-        $employee -> name = str_replace('\'', '', strtoupper($val = iconv('UTF-8','ASCII//TRANSLIT', $request -> get('name'))));
+        $employee -> name = str_replace('\'', '', mb_strtoupper($val = iconv('UTF-8','ASCII//TRANSLIT', $request -> get('name'))));
         $employee -> performance_score = $request -> get('performance_score');
         $employee -> is_administrative = ($request -> get('is_administrative') == 'on') ? 1 : 0;
-        $employee -> last_year_beneficiary = ($request -> get('last_year_beneficiary') == 'on') ? 1 : 0;
         $employee -> employment_date = $request -> get('employment_date');
         $employee -> wage = $request -> get('wage');
         $employee -> save();
@@ -145,7 +144,6 @@ class EmployeeController extends Controller {
         $employee -> name = $request -> get('name');
         $employee -> performance_score = $request -> get('performance_score');
         $employee -> is_administrative = ($request -> get('is_administrative') == 'on') ? 1 : 0;
-        $employee -> last_year_beneficiary = ($request -> get('last_year_beneficiary') == 'on') ? 1 : 0;
         $employee -> employment_date = $request -> get('employment_date');
         $employee -> wage = $request -> get('wage');
         $employee -> save();

@@ -59,7 +59,15 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="requested_money"> Monto solicitado ($) </label>
-                                        <input type="number" id="requested_money" name="requested_money" class="form-control" placeholder="XXXXXXXX" value="{{ $data -> requested_money }}">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">$</span>
+                                            </div>
+                                            <input id="requested_money" name="requested_money" type="number" class="form-control" value="{{ $data -> requested_money }}">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">.00</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -67,7 +75,7 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label for="application_type">Tipo de aplicación</label>
-                                        <select class="form-control" id="application_type" name="application_type">
+                                        <select class="form-control" id="application_type" name="application_type" onchange="unhideForm(this)">
                                             @foreach(\App\Models\ApplicationType::all() as $applicationType)
                                                 <option value="{{ $applicationType -> id }}"> {{ $applicationType -> name }} </option>
                                             @endforeach
@@ -82,6 +90,26 @@
                                                 <option value="{{ $applicationTarget -> id }}"> {{ $applicationTarget -> name }} </option>
                                             @endforeach
                                         </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="hidden-form" class="d-none">
+                            <hr class="my-4" />
+                            <h6 class="heading-small text-muted mb-4"> Información del beneficiario (sólo solicitudes familiares) </h6>
+                            <div class="pl-lg-4">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="employee_cc"> Cédula del beneficiario </label>
+                                            <input type="number" id="beneficiary_document" name="beneficiary_document" class="form-control" placeholder="XXXXXXXXX" value="{{ $data -> beneficiary_document }}">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="requested_money"> Nombre del beneficiario </label>
+                                            <input type="text" id="beneficiary_name" name="beneficiary_name" class="form-control" placeholder="Pepito Pérez" value="{{ $data -> beneficiary_name }}">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -140,12 +168,12 @@
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col-lg-10">
-                                            <label>¿Fué beneficiario en 2019?</label>
+                                            <label>¿Fué beneficiario del año anterior?</label>
                                         </div>
                                         <div class="col-lg-2">
                                             <div class="custom-control custom-checkbox">
                                                 <label class="custom-toggle">
-                                                    <input name="had_benefit_before" id="had_benefit_before" type="checkbox" @if($data -> had_benefit_before == 1) checked @endif>
+                                                    <input name="last_year_beneficiary" id="last_year_beneficiary" type="checkbox" @if($data -> last_year_beneficiary == 1) checked @endif>
                                                     <span class="custom-toggle-slider rounded-circle" data-label-off="No" data-label-on="Sí"></span>
                                                 </label>
                                             </div>
@@ -205,5 +233,24 @@
     <script type="text/javascript">
         $('#application_type').val({{ $data -> application_type }});
         $('#application_target').val({{ $data -> application_target }});
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var app_f_id = $('#application_type').val();
+            if (app_f_id == 2) {
+                $('#hidden-form').removeClass();
+            } else {
+                $('#hidden-form').addClass("d-none");
+            }
+        })
+    </script>
+    <script type="text/javascript">
+        function unhideForm(sel) {
+            if (sel.value == 2) {
+                $('#hidden-form').removeClass();
+            } else {
+                $('#hidden-form').addClass("d-none");
+            }
+        }
     </script>
 @endsection

@@ -17,7 +17,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'GLORIA STELLA PATAQUIVA SALAMANCA',
             'performance_score' => 0,
             'employment_date' => '2018-10-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1842722',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -29,7 +28,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ISRAEL PERILLA VACA',
             'performance_score' => 100,
             'employment_date' => '1995-04-20 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6148245',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -41,7 +39,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JORGE HERNAN FRANCO GALLEGO',
             'performance_score' => 100,
             'employment_date' => '1995-09-11 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6148245',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -53,7 +50,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'RENAN CALDERON MORALES',
             'performance_score' => 100,
             'employment_date' => '1997-03-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6148245',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -65,7 +61,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MARIEN ZORAIDA RIVERA GUZMAN',
             'performance_score' => 100,
             'employment_date' => '2018-09-03 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '5334460',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -77,7 +72,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CARLOS YUNIOR POLANIA ZAMORA',
             'performance_score' => 0,
             'employment_date' => '2014-06-03 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '5334460',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -89,7 +83,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JOHANA ALDANA CRANE',
             'performance_score' => 100,
             'employment_date' => '2005-03-18 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '5334460',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -101,7 +94,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'OLGA LILIANA CANO ALVARÁN',
             'performance_score' => 100,
             'employment_date' => '2010-02-16 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '5334460',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -113,7 +105,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'HECTOR JAVIER CORTES SUAREZ',
             'performance_score' => 100,
             'employment_date' => '2014-05-12 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '5334460',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -125,7 +116,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'FREDY PEÑUELA PINTO',
             'performance_score' => 100,
             'employment_date' => '2008-12-16 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '5334460',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -137,7 +127,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ALBERTO ZAMBRANO GUERRERO',
             'performance_score' => 100,
             'employment_date' => '2020-01-09 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '5334460',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -149,7 +138,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ELISA GABRIELA BENAVIDES MONTENEGRO',
             'performance_score' => 100,
             'employment_date' => '2018-10-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '5334460',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -161,7 +149,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CLARA HELENA AGUDELO QUINTERO',
             'performance_score' => 100,
             'employment_date' => '1995-10-19 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '5334460',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -173,7 +160,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MANUEL ANTONIO CRUZ PINEDA',
             'performance_score' => 100,
             'employment_date' => '1995-08-09 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4953304',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -185,7 +171,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CAROL BIBIANA ROMERO CAÑON',
             'performance_score' => 100,
             'employment_date' => '2018-08-08 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4953304',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -197,7 +182,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'DIANA CECILIA TORRES VEGA',
             'performance_score' => 100,
             'employment_date' => '1990-08-13 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -209,7 +193,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'FRANCISCO JOSE GAITAN DAZA',
             'performance_score' => 0,
             'employment_date' => '2015-03-16 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -221,7 +204,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'OMAR ORJUELA MORA',
             'performance_score' => 0,
             'employment_date' => '2008-12-15 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -233,7 +215,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ANDRES FABIAN GONZALEZ RODAS',
             'performance_score' => 100,
             'employment_date' => '2018-08-15 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -245,7 +226,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ANA MILENA FAJARDO CORREDOR',
             'performance_score' => 0,
             'employment_date' => '2014-07-10 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -257,7 +237,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JESSICA FABIOLA PINILLA SALGADO',
             'performance_score' => 100,
             'employment_date' => '2018-09-14 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -269,7 +248,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ANGELA MARIA CORREA VELEZ',
             'performance_score' => 100,
             'employment_date' => '1978-11-03 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -281,7 +259,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JAIME LUIS CHARRIS PIZARRO',
             'performance_score' => 100,
             'employment_date' => '2019-05-02 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -293,7 +270,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'XIMENA ANDREA QUESADA MORENO',
             'performance_score' => 100,
             'employment_date' => '2018-09-03 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -305,7 +281,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ELLA MARIA AÑEZ RODRIGUEZ',
             'performance_score' => 100,
             'employment_date' => '2019-05-02 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -317,7 +292,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'YENNY REYES GONZALEZ',
             'performance_score' => 100,
             'employment_date' => '2005-05-02 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4367944',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -329,7 +303,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MARTHA PATRICIA ORTIZ CAMACHO',
             'performance_score' => 100,
             'employment_date' => '2008-12-18 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -341,7 +314,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MERLYS PATRICIA NATERA CONTRERAS',
             'performance_score' => 100,
             'employment_date' => '2018-09-04 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -353,7 +325,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CARLOS ARTURO SANCHEZ RINCON',
             'performance_score' => 100,
             'employment_date' => '2014-07-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -365,7 +336,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'YOLANDA RODRIGUEZ RODRIGUEZ',
             'performance_score' => 100,
             'employment_date' => '2011-07-19 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -377,7 +347,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'LUZ ANDREA ROJAS RODRIGUEZ',
             'performance_score' => 0,
             'employment_date' => '2014-04-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -389,7 +358,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'FELIPE IBAÑEZ AMAYA',
             'performance_score' => 0,
             'employment_date' => '2011-08-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -401,7 +369,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'GINNA FERNANDA GARCIA AVILA',
             'performance_score' => 0,
             'employment_date' => '2014-05-02 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -413,7 +380,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MARTHA BERENICE SANCHEZ LOPEZ',
             'performance_score' => 100,
             'employment_date' => '1995-08-09 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -425,7 +391,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CLARA IVETH CORDOBA RINCON',
             'performance_score' => 100,
             'employment_date' => '1999-10-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -437,7 +402,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'EMMA CONSUELO CORONEL FUENTES',
             'performance_score' => 100,
             'employment_date' => '2018-08-15 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -449,7 +413,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ELSA NELLY VELASCO PULIDO',
             'performance_score' => 100,
             'employment_date' => '1996-10-25 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -461,7 +424,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'PILAR CRISTINA MORENO SIERRA',
             'performance_score' => 100,
             'employment_date' => '2009-06-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -473,7 +435,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ANDREA MILENA SILVA CARDONA',
             'performance_score' => 100,
             'employment_date' => '2015-01-13 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -485,7 +446,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'NORMA CONSTANZA CAMARGO CASALLAS',
             'performance_score' => 100,
             'employment_date' => '2018-08-15 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -497,7 +457,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'SONIA URIBE LASPRILLA',
             'performance_score' => 0,
             'employment_date' => '2013-09-02 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -509,7 +468,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CARLOS ALBERTO PINZON SALCEDO',
             'performance_score' => 100,
             'employment_date' => '1995-10-09 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -521,7 +479,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JORGE LUIS SUAREZ FIGUEROA',
             'performance_score' => 100,
             'employment_date' => '2018-10-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -533,7 +490,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MARTHA LILIANA FUNEME ARIAS',
             'performance_score' => 100,
             'employment_date' => '2018-08-15 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -545,7 +501,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MARTHA JANETH GUEVARA TRIANA',
             'performance_score' => 100,
             'employment_date' => '1995-01-11 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -557,7 +512,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'RODRIGO PUENTES GONZALEZ',
             'performance_score' => 100,
             'employment_date' => '1978-08-09 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -569,7 +523,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'HECTOR JULIO FLECHAS PACHECO',
             'performance_score' => 100,
             'employment_date' => '1996-05-23 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -581,7 +534,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'RUTH TERESA BERNAL RUIZ',
             'performance_score' => 100,
             'employment_date' => '2010-01-21 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -593,7 +545,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JULIA DEL CARMEN BETANCOURT GUTIERREZ',
             'performance_score' => 100,
             'employment_date' => '1993-02-02 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -605,7 +556,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'OLGA LUCIA GALLEGO SAAVEDRA',
             'performance_score' => 100,
             'employment_date' => '2008-12-16 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -617,7 +567,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'GLORIA ASTRID GOMEZ RIVEROS',
             'performance_score' => 100,
             'employment_date' => '1995-10-24 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -629,7 +578,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'NELSON ANDRES IZQUIERDO CHAVES',
             'performance_score' => 100,
             'employment_date' => '1983-05-09 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4367944',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -641,7 +589,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'DEYANIRA ROMERO GARCIA',
             'performance_score' => 100,
             'employment_date' => '2012-10-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4367944',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -653,7 +600,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'FABIO ERNESTO PATIÑO CARO',
             'performance_score' => 0,
             'employment_date' => '2014-04-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4367944',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -665,7 +611,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JORGE ALBERTO ESPINOSA ESPITIA',
             'performance_score' => 100,
             'employment_date' => '2018-09-03 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4367944',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -677,7 +622,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'LUZ DARY GONZALEZ MARTIN ',
             'performance_score' => 100,
             'employment_date' => '2019-04-12 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4367944',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -689,7 +633,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'LUZ MARINA BECERRA BARRETO',
             'performance_score' => 0,
             'employment_date' => '2019-04-24 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3950730',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -701,7 +644,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'LOIDA RUTH SILVA MORALES',
             'performance_score' => 100,
             'employment_date' => '2018-10-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3950730',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -713,7 +655,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'DULFARY AGUDELO OSORIO',
             'performance_score' => 100,
             'employment_date' => '2018-09-04 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3950730',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -725,7 +666,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CARLOS JULIO QUIROGA QUEVEDO',
             'performance_score' => 100,
             'employment_date' => '2012-09-10 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3950730',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -737,7 +677,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'DIANA ELIZABETH GOMEZ SANTISTEBAN',
             'performance_score' => 100,
             'employment_date' => '2014-08-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3950730',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -749,7 +688,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MARTHA LILIANA SARMIENTO CHAVES',
             'performance_score' => 0,
             'employment_date' => '2018-08-15 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3950730',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -761,7 +699,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'NELLY BERNAL OLARTE',
             'performance_score' => 100,
             'employment_date' => '1989-02-21 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3950730',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -773,7 +710,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'KATHERINE CERQUERA ROJAS',
             'performance_score' => 100,
             'employment_date' => '2018-09-14 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3691789',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -785,7 +721,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'DIANA PATRICIA CLAVIJO YATE',
             'performance_score' => 100,
             'employment_date' => '2014-09-15 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3691789',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -797,7 +732,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'BLANCA ISABEL GIL LOPEZ',
             'performance_score' => 0,
             'employment_date' => '1996-04-15 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3691789',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -809,7 +743,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ZAYDA IVETTE RIAÑO SALAMANCA',
             'performance_score' => 100,
             'employment_date' => '2019-04-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3211673',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -821,7 +754,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MARÍA CAMILA LAGUNA FORERO',
             'performance_score' => 100,
             'employment_date' => '2018-09-04 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3211673',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -833,7 +765,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MARTA NUBIA VERA MORENO',
             'performance_score' => 0,
             'employment_date' => '2009-09-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3081918',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -845,7 +776,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'DIANA JAENNETH RIOS PAEZ',
             'performance_score' => 0,
             'employment_date' => '2012-09-11 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3081918',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -857,7 +787,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'VIVIANA ANDREA CASTILLO SIATAME',
             'performance_score' => 100,
             'employment_date' => '2019-04-10 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3081918',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -869,7 +798,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'SONIA MERCEDES PONCE CHARRIA',
             'performance_score' => 100,
             'employment_date' => '1992-04-14 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3081918',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -881,7 +809,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JUAN FERNANDO TABARES SALCEDO',
             'performance_score' => 0,
             'employment_date' => '2014-05-02 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3081918',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -893,7 +820,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JOSE ANTONIO REINA GUEVARA',
             'performance_score' => 100,
             'employment_date' => '2012-03-13 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3081918',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -905,7 +831,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MANUEL ALEJANDRO RAMIREZ MUÑOZ',
             'performance_score' => 100,
             'employment_date' => '2019-05-02 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3081918',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -917,7 +842,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'DAVID ALEJANDRO BOHORQUEZ FITATA',
             'performance_score' => 100,
             'employment_date' => '2018-10-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3081918',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -929,7 +853,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CLARA ERMINIA EUGENIA ROBAYO VANEGAS',
             'performance_score' => 0,
             'employment_date' => '1977-03-18 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2980227',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -941,7 +864,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'EDGAR BAUTISTA GAMBA',
             'performance_score' => 0,
             'employment_date' => '2018-10-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2990759',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -953,7 +875,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ROSA INES MALAGON VALERO',
             'performance_score' => 100,
             'employment_date' => '2012-09-10 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2990759',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -965,7 +886,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MANUEL ALFONSO RAMOS CORTES',
             'performance_score' => 0,
             'employment_date' => '1990-08-21 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2990759',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -977,7 +897,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CLARA INES UMBARILA CHACON',
             'performance_score' => 100,
             'employment_date' => '1988-02-11 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2990759',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -989,7 +908,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'YANIRA HERRERA VACA',
             'performance_score' => 100,
             'employment_date' => '1989-11-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2990759',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1001,7 +919,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CARLOS ARTURO SILVA SALINAS',
             'performance_score' => 100,
             'employment_date' => '1985-05-27 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2990759',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1013,7 +930,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'FANNY RUIZ GONZALEZ',
             'performance_score' => 100,
             'employment_date' => '1996-04-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2990759',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1025,7 +941,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MARTHA CECILIA CAMACHO ESGUERRA',
             'performance_score' => 0,
             'employment_date' => '1995-07-28 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2721555',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1037,7 +952,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CLAUDIA FARIDE GARZON MOSSO',
             'performance_score' => 100,
             'employment_date' => '2005-02-15 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2721555',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1049,7 +963,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CLAUDIA PATRICIA VILLANUEVA BARRETO',
             'performance_score' => 100,
             'employment_date' => '2010-01-21 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2721555',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1061,7 +974,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'HANET MARFORI CHAPARRO HERNANDEZ',
             'performance_score' => 100,
             'employment_date' => '2019-06-04 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2721555',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1073,7 +985,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'GRETA MARLENY GALINDO BAQUERO',
             'performance_score' => 100,
             'employment_date' => '1992-11-26 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2721555',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1085,7 +996,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CAROLINA RECALDE VEGA',
             'performance_score' => 100,
             'employment_date' => '1993-02-24 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2721555',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1097,7 +1007,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ALVARO JAIME VALDERRAMA CASTRO',
             'performance_score' => 100,
             'employment_date' => '2018-09-14 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2721555',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1109,7 +1018,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JORGE EDUARDO LOPEZ GALLEGO',
             'performance_score' => 100,
             'employment_date' => '2011-08-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2721555',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1121,7 +1029,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JOSE ORLANDO HERNANDEZ CIFUENTES',
             'performance_score' => 100,
             'employment_date' => '1993-12-03 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2721555',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1133,7 +1040,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CAROLINA GOMEZ CHAPARRO',
             'performance_score' => 100,
             'employment_date' => '1990-05-15 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2721555',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1145,7 +1051,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CARMEN ALICIA SANTOS ESPITIA',
             'performance_score' => 0,
             'employment_date' => '1986-06-23 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2721555',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1157,7 +1062,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'LUZ ANGELA CASTRO FERNANDEZ',
             'performance_score' => 100,
             'employment_date' => '2011-08-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2542265',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1169,7 +1073,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'AIDA PERALTA IZQUIERDO',
             'performance_score' => 0,
             'employment_date' => '1981-06-16 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2542265',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1181,7 +1084,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'NUBIA GRACIELA HENAO NUÑEZ',
             'performance_score' => 100,
             'employment_date' => '2012-09-07 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2542265',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1193,7 +1095,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'HILDA MARIA BONILLA CAICEDO',
             'performance_score' => 100,
             'employment_date' => '1996-03-27 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2542265',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1205,7 +1106,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'DORIS PATRICIA HERRERA REYES',
             'performance_score' => 100,
             'employment_date' => '1987-10-26 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2542265',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1217,7 +1117,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'HELGA MARIA BALLEN PATIÑO',
             'performance_score' => 100,
             'employment_date' => '2012-09-13 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2542265',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1229,7 +1128,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'SILVIA PATRICIA OLARTE RUJANA',
             'performance_score' => 100,
             'employment_date' => '1996-03-28 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2250064',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1241,7 +1139,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JAISSIR GABRIEL CUENTAS CERVANTES',
             'performance_score' => 100,
             'employment_date' => '2018-09-14 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2250064',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1253,7 +1150,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'DIEGO ALEXANDER MAYORGA MAYORGA',
             'performance_score' => 100,
             'employment_date' => '2018-09-04 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2250064',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1265,7 +1161,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'LUZ AIDEE GOMEZ CAMACHO',
             'performance_score' => 100,
             'employment_date' => '2018-09-04 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2250064',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1277,7 +1172,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'DORIS HERRERA QUINTERO',
             'performance_score' => 0,
             'employment_date' => '1992-04-13 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2250064',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1289,7 +1183,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MONICA ALEJANDRA DIAZ GUZMAN',
             'performance_score' => 100,
             'employment_date' => '2018-12-03 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2250064',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1301,7 +1194,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CLAUDIA PATRICIA MURCIA TOVAR',
             'performance_score' => 100,
             'employment_date' => '2011-07-19 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2250064',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1313,7 +1205,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'EDELMIRA CORBA CARVAJAL',
             'performance_score' => 100,
             'employment_date' => '1996-04-02 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2250064',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1325,7 +1216,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'INGRIT JINET GARCIA LAGOS',
             'performance_score' => 100,
             'employment_date' => '2019-05-10 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2077050',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1337,7 +1227,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'FLOR ALBA RIVERA TRIANA',
             'performance_score' => 100,
             'employment_date' => '1983-12-22 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2077050',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1349,7 +1238,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MARTHA LUCIA GOMEZ MONTES',
             'performance_score' => 100,
             'employment_date' => '1996-04-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1947688',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1361,7 +1249,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MARIA ADELA RIVERA DE CHAVES',
             'performance_score' => 100,
             'employment_date' => '1974-06-10 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2077050',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1373,7 +1260,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'LUZ CLEMENCIA OJEDA CIFUENTES',
             'performance_score' => 0,
             'employment_date' => '1996-04-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2250064',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1385,7 +1271,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'EDGAR YESITH TRIANA TORRES',
             'performance_score' => 100,
             'employment_date' => '2018-10-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1920275',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1397,7 +1282,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MARIA JULIETA BELTRAN GUIRAL',
             'performance_score' => 100,
             'employment_date' => '1980-10-09 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1920275',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1409,7 +1293,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'DIANA LEIDY LOPEZ QUENORAN',
             'performance_score' => 100,
             'employment_date' => '2019-04-12 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1920275',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1421,7 +1304,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ADRIANA MARCELA GARAVITO JIMENEZ',
             'performance_score' => 100,
             'employment_date' => '2018-10-12 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1920275',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1433,7 +1315,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ANA ISABEL MORENO VARGAS',
             'performance_score' => 100,
             'employment_date' => '1994-07-14 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1920275',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1445,7 +1326,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'SANDRA GUTIERREZ MORENO',
             'performance_score' => 100,
             'employment_date' => '2011-08-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1920275',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1457,7 +1337,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JINO MARDUK IGUARAN SAAVEDRA',
             'performance_score' => 0,
             'employment_date' => '2018-09-14 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1920275',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1469,7 +1348,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CLARA INES DIAZ LEON',
             'performance_score' => 0,
             'employment_date' => '1977-07-28 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1920275',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1481,7 +1359,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'SONIA LORELA HERNANDEZ CORDOBA',
             'performance_score' => 100,
             'employment_date' => '1990-08-21 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1920275',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1493,7 +1370,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MARIELA CUERVO JIMENEZ',
             'performance_score' => 100,
             'employment_date' => '1994-06-20 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1920275',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1505,7 +1381,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'LUIS CARLOS RUIZ ',
             'performance_score' => 100,
             'employment_date' => '1995-06-29 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1920275',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1517,7 +1392,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ANA ROCIO MORA LÓPEZ',
             'performance_score' => 0,
             'employment_date' => '2018-09-14 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1920275',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1529,7 +1403,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'INÉS CRISTINA TRIGOS REYES',
             'performance_score' => 100,
             'employment_date' => '2018-09-14 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1920275',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1541,7 +1414,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CRISTIAN CAMILO GRANADOS RAMIREZ',
             'performance_score' => 0,
             'employment_date' => '2018-09-14 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1842722',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1553,7 +1425,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'DAVID ERNESTO DIAZ CARVAJAL',
             'performance_score' => 100,
             'employment_date' => '1987-01-23 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1842722',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1565,7 +1436,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'LUZ TEMILDA PLAZAS LEON',
             'performance_score' => 100,
             'employment_date' => '1982-08-06 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1842722',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1577,7 +1447,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CLARA INES ROJAS DE ZORRO',
             'performance_score' => 100,
             'employment_date' => '1976-10-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1700082',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1589,7 +1458,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JOSE ANTONIO GALEANO BARRERA',
             'performance_score' => 0,
             'employment_date' => '1981-05-22 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1700082',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1601,7 +1469,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'NURY MARCELA TOCARRUNCHO VIASUS',
             'performance_score' => 100,
             'employment_date' => '2018-09-14 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1594046',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1613,7 +1480,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'FABIAN GALINDO PARADA',
             'performance_score' => 100,
             'employment_date' => '2018-09-14 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1700082',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1625,7 +1491,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'LUIS ANTONIO NARANJO TEJEDOR',
             'performance_score' => 100,
             'employment_date' => '1995-02-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1700082',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1637,7 +1502,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JOSE ALEJANDRO SOLANO RODRIGUEZ',
             'performance_score' => 100,
             'employment_date' => '1995-01-13 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1700082',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1649,7 +1513,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CARLOS JULIO ALVAREZ MORA',
             'performance_score' => 100,
             'employment_date' => '1994-07-27 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1700082',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1661,7 +1524,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'WILDER HERNANDO SAAVEDRA MOLANO',
             'performance_score' => 100,
             'employment_date' => '2018-09-14 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1594046',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1673,7 +1535,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'OCTAVIO CAÑOLA DUARTE',
             'performance_score' => 100,
             'employment_date' => '1996-04-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1594046',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1685,7 +1546,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CARLOS ALBERTO HERNANDEZ ALFARO',
             'performance_score' => 100,
             'employment_date' => '1996-05-17 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1594046',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1697,7 +1557,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JOSE ARMANDO LOPEZ ACOSTA',
             'performance_score' => 100,
             'employment_date' => '1996-04-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1512852',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1709,7 +1568,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'VICTOR MANUEL GIL HERNANDEZ',
             'performance_score' => 100,
             'employment_date' => '1996-09-12 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1512852',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1721,7 +1579,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JAIME RIAÑO LOPEZ',
             'performance_score' => 100,
             'employment_date' => '1996-04-02 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1512852',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1733,7 +1590,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'YENY RUTH RODRIGUEZ ZAMBRANO',
             'performance_score' => 100,
             'employment_date' => '1996-04-02 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1920275',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1745,7 +1601,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JESUS ALIRIO NASPIRAN PATIÑO',
             'performance_score' => 100,
             'employment_date' => '1995-02-15 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3950730',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1757,7 +1612,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'SANDRA LILIANA JIMENEZ ARIAS',
             'performance_score' => 100,
             'employment_date' => '1996-04-02 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3950730',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1769,7 +1623,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ELIZABETH CONTRERAS LIZARAZO',
             'performance_score' => 100,
             'employment_date' => '1987-03-19 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1781,7 +1634,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JUAN CAMILO CARO DAZA',
             'performance_score' => 100,
             'employment_date' => '2019-03-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1793,7 +1645,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'OLGA LUCIA ZARATE MANTILLA',
             'performance_score' => 100,
             'employment_date' => '2010-09-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1805,7 +1656,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'LUIS EDUARDO SUAREZ HUESO',
             'performance_score' => 100,
             'employment_date' => '2018-10-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1817,7 +1667,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'FANNY CARDONA MORENO',
             'performance_score' => 100,
             'employment_date' => '2009-01-05 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1829,7 +1678,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JUAN SEBASTIAN GUERRERO OTERO',
             'performance_score' => 0,
             'employment_date' => '2018-08-15 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3950730',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1841,7 +1689,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'NATALIA FRANCO MEZA',
             'performance_score' => 0,
             'employment_date' => '2018-09-03 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3950730',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1853,7 +1700,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ALEJANDRO MIRANDA ZABALETA',
             'performance_score' => 0,
             'employment_date' => '2018-08-15 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3950730',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1865,7 +1711,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'LORENA DEL PILAR CONDE OCHOA',
             'performance_score' => 0,
             'employment_date' => '2014-09-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1877,7 +1722,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'SANDRA CONSUELO GUTIERREZ HERNANDEZ',
             'performance_score' => 0,
             'employment_date' => '2014-05-12 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1889,7 +1733,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'SENIA MARIA DIAZ SALAZAR',
             'performance_score' => 0,
             'employment_date' => '2015-02-18 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1901,7 +1744,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CLAUDIA PATRICIA SALAZAR MEDINA',
             'performance_score' => 0,
             'employment_date' => '2014-05-12 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1913,7 +1755,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'LUZ MYRIAM GARCIA PELAEZ',
             'performance_score' => 0,
             'employment_date' => '2010-01-21 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3691789',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1925,7 +1766,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MEDARDO CASTRO CARANTONIO',
             'performance_score' => 0,
             'employment_date' => '1994-07-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3691789',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1937,7 +1777,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MARTHA ISABEL BARRERA ROJAS',
             'performance_score' => 0,
             'employment_date' => '2009-01-05 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1949,7 +1788,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ANA YISED CASTRO ORTIZ',
             'performance_score' => 100,
             'employment_date' => '2019-03-12 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1961,7 +1799,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CESAR ANDRES ESCALANTE BORRERO',
             'performance_score' => 99,
             'employment_date' => '2019-02-08 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1973,7 +1810,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'DARIO ENRIQUE RIVAS LARA',
             'performance_score' => 0,
             'employment_date' => '2010-01-21 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3081918',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1985,7 +1821,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MYRIAM RODRIGUEZ OJEDA',
             'performance_score' => 100,
             'employment_date' => '2005-04-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1947688',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -1997,7 +1832,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'SANDRA CAROLINA CHAVES ZAMBRANO',
             'performance_score' => 100,
             'employment_date' => '2014-04-07 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2009,7 +1843,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'DANIEL RICARDO SOLORZANO RODRIGUEZ',
             'performance_score' => 100,
             'employment_date' => '2018-08-15 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2021,7 +1854,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MILLER PAEZ GONZALEZ',
             'performance_score' => 0,
             'employment_date' => '2015-03-02 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2033,7 +1865,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'WILSON ANDRES MALDONADO HERRERA',
             'performance_score' => 0,
             'employment_date' => '2014-05-12 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2045,7 +1876,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'BETTY JASMID BUITRAGO ROSERO',
             'performance_score' => 100,
             'employment_date' => '2010-02-08 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2057,7 +1887,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'DIANA BELEN MORA PULIDO',
             'performance_score' => 0,
             'employment_date' => '2014-12-15 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2069,7 +1898,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'BLANCA LILIANA TRUJILLO AYERBE',
             'performance_score' => 100,
             'employment_date' => '2014-06-03 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2081,7 +1909,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'SERGIO YAMID SEPULVEDA TORRES',
             'performance_score' => 100,
             'employment_date' => '2015-08-05 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '5334460',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2093,7 +1920,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ALEJANDRA MARÍA ESPINOSA RUIZ',
             'performance_score' => 0,
             'employment_date' => '2015-06-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '5334460',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2105,7 +1931,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'NOHORA JAZMIN PEREZ BERMUDEZ',
             'performance_score' => 0,
             'employment_date' => '2005-03-18 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '5334460',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2117,7 +1942,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MARIA DEL MAR SUAREZ SOLANO',
             'performance_score' => 100,
             'employment_date' => '1993-06-22 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '5334460',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2129,7 +1953,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'PILAR ANDREA RIVERA PARRA',
             'performance_score' => 100,
             'employment_date' => '2014-05-02 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '5334460',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2141,7 +1964,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'TOBIAS ALFONSO LINARES JIMENEZ',
             'performance_score' => 100,
             'employment_date' => '2016-07-06 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2153,7 +1975,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'DIEGO FERNANDO SALAZAR BECERRA',
             'performance_score' => 100,
             'employment_date' => '2016-05-02 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2165,7 +1986,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JAVIER MAURICIO FONSECA SANCHEZ',
             'performance_score' => 100,
             'employment_date' => '1998-02-09 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6176855',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2177,7 +1997,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CARLOS ANTONIO STAND VILLARREAL',
             'performance_score' => 100,
             'employment_date' => '2014-06-16 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6176855',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2189,7 +2008,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MIGUEL ENRIQUE SALDAÑA PARRA',
             'performance_score' => 100,
             'employment_date' => '2018-09-14 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3211673',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2201,7 +2019,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'BRIGITTE ROCIO CORREDOR PEÑA',
             'performance_score' => 100,
             'employment_date' => '2019-05-10 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3211673',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2213,7 +2030,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'LUIS ANTONIO MARTINEZ PINTO',
             'performance_score' => 100,
             'employment_date' => '2014-08-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3211673',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2225,7 +2041,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'EMILIO SNEIDER FORERO BELEÑO',
             'performance_score' => 100,
             'employment_date' => '2018-10-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2237,7 +2052,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'RAÚL FERNANDO CAMARGO MEDINA',
             'performance_score' => 100,
             'employment_date' => '2005-12-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6176855',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2249,7 +2063,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'KENNY TATIANA OTALORA CAMACHO',
             'performance_score' => 100,
             'employment_date' => '2014-09-15 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6176855',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2261,7 +2074,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'LIDY MILENE PEDRAZA PARRA',
             'performance_score' => 100,
             'employment_date' => '2012-10-12 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2273,7 +2085,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'WILLIAM HERNAN OTALORA CABANZO',
             'performance_score' => 100,
             'employment_date' => '2015-07-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2285,7 +2096,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'FARID BARRERA MOLINA',
             'performance_score' => 100,
             'employment_date' => '2009-01-15 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2297,7 +2107,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'LINA MERCEDES DURAN MARTINEZ',
             'performance_score' => 100,
             'employment_date' => '2018-09-03 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6176855',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2309,7 +2118,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CRISTINA LOSADA SAENZ',
             'performance_score' => 100,
             'employment_date' => '2018-10-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6176855',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2321,7 +2129,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ADRIANA MILENA OLARTE ABELLO',
             'performance_score' => 0,
             'employment_date' => '2018-08-15 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2333,7 +2140,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'HECTOR MARIO RAMIREZ RIOS',
             'performance_score' => 100,
             'employment_date' => '2018-08-15 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2345,7 +2151,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'HARVEY DARIO LOPEZ CORTES',
             'performance_score' => 100,
             'employment_date' => '2018-09-14 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2357,7 +2162,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'OLGA LUCÍA MORENO GONZÁLEZ',
             'performance_score' => 0,
             'employment_date' => '2018-09-04 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6176855',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2369,7 +2173,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'FABIO ALBERTO GOMEZ SANTOS',
             'performance_score' => 100,
             'employment_date' => '1996-02-14 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6176855',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2381,7 +2184,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ANDREA MARCELA PANTOJA GARZON',
             'performance_score' => 100,
             'employment_date' => '2018-10-12 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6176855',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2393,7 +2195,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MYRIAM GEMADE OLAYA',
             'performance_score' => 100,
             'employment_date' => '2009-07-14 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2405,7 +2206,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ADRIANA ANGELICA BORDA RODRIGUEZ',
             'performance_score' => 100,
             'employment_date' => '2014-05-12 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2417,7 +2217,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JOHN NEPHER TELLEZ MONTAÑA',
             'performance_score' => 0,
             'employment_date' => '2014-08-21 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2429,7 +2228,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'YULITZA MAILETH FUENMAYOR SIERRA',
             'performance_score' => 100,
             'employment_date' => '2018-09-04 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6176855',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2441,7 +2239,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'RAUL ARAMENDI GARCIA',
             'performance_score' => 100,
             'employment_date' => '2018-09-03 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2453,7 +2250,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CARLOS ALBERTO ABDALA VERGARA',
             'performance_score' => 0,
             'employment_date' => '2014-05-02 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2465,7 +2261,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'LUZ MAGALLY PEREZ RODRIGUEZ',
             'performance_score' => 0,
             'employment_date' => '2009-01-05 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6176855',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2477,7 +2272,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CLAUDIA MARCELA GALVIS BELTRÁN',
             'performance_score' => 100,
             'employment_date' => '2014-04-07 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6176855',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2489,7 +2283,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JOSE LEONARDO JURADO NUMPAQUE',
             'performance_score' => 0,
             'employment_date' => '2010-02-16 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2501,7 +2294,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JULISSE GUAYACAN FUENTES',
             'performance_score' => 100,
             'employment_date' => '2014-05-12 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2513,7 +2305,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MARTHA PATRICIA RODRIGUEZ COLLAZOS',
             'performance_score' => 0,
             'employment_date' => '1994-01-14 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2525,7 +2316,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'AMALIA GALEANO CABARCA',
             'performance_score' => 100,
             'employment_date' => '2016-03-07 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2537,7 +2327,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ENITH MIREYA COCA PEÑA',
             'performance_score' => 100,
             'employment_date' => '2014-06-03 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2549,7 +2338,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ALFREDO OLAYA TORO',
             'performance_score' => 100,
             'employment_date' => '2014-08-11 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2561,7 +2349,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'YORDILEY TORRES HERRERA',
             'performance_score' => 99,
             'employment_date' => '2007-05-15 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2573,7 +2360,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'HUMBERTO JUNCO ROCHA',
             'performance_score' => 100,
             'employment_date' => '2014-04-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2585,7 +2371,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ERIKA LUCIA VILLAMIL FAJARDO',
             'performance_score' => 100,
             'employment_date' => '2014-08-19 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2597,7 +2382,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ESPERANZA MARIA EMILIA NAVAS RUBIANO',
             'performance_score' => 100,
             'employment_date' => '1998-01-22 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2609,7 +2393,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'DIANA LICETH PALACIOS DONCEL',
             'performance_score' => 100,
             'employment_date' => '2018-09-03 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6176855',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2621,7 +2404,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ALICIA VARGAS ROMERO',
             'performance_score' => 100,
             'employment_date' => '1999-08-17 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6176855',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2633,7 +2415,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JACQUELINE MOLINA MURILLO',
             'performance_score' => 100,
             'employment_date' => '2014-05-02 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2645,7 +2426,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MARTHA INES OLMOS MORENO',
             'performance_score' => 0,
             'employment_date' => '2014-06-16 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2657,7 +2437,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JAIRO MOSQUERA MENA',
             'performance_score' => 100,
             'employment_date' => '2014-04-16 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2669,7 +2448,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JOHN HAROLD PINZON CARRILLO',
             'performance_score' => 100,
             'employment_date' => '2009-05-04 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2681,7 +2459,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'OLGA PATRICIA CARDENAS GUZMAN',
             'performance_score' => 100,
             'employment_date' => '2014-04-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2693,7 +2470,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'SANDRA PATRICIA SANABRIA CASTRO',
             'performance_score' => 100,
             'employment_date' => '2004-10-14 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2705,7 +2481,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MANUEL IGNACIO SALAMANCA MERCHAN',
             'performance_score' => 100,
             'employment_date' => '2014-05-12 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2717,7 +2492,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JOSE FERNANDO ESPINOSA ',
             'performance_score' => 100,
             'employment_date' => '2014-07-21 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6176855',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2729,7 +2503,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'HECTOR HUMBERTO HERNANDEZ SERRANO',
             'performance_score' => 100,
             'employment_date' => '2011-01-04 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2741,7 +2514,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MARCO TULIO MARQUEZ ROZO',
             'performance_score' => 100,
             'employment_date' => '2015-10-08 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6176855',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2753,7 +2525,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'NARDA MAGNOLIA PUENTES SOTO',
             'performance_score' => 100,
             'employment_date' => '2016-01-18 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2765,7 +2536,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CARMEN YANETH PEREA CRIOLLO',
             'performance_score' => 100,
             'employment_date' => '2014-07-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2777,7 +2547,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JEIMMY ADRIANA DEL PILAR LEON CARDENAS',
             'performance_score' => 100,
             'employment_date' => '2013-01-15 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2789,7 +2558,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'IVAN FERNANDO ENRIQUEZ NARVAEZ',
             'performance_score' => 100,
             'employment_date' => '2018-10-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6176855',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2801,7 +2569,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'BETTY YOLANDA VARGAS DOTOR',
             'performance_score' => 100,
             'employment_date' => '2014-05-02 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6176855',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2813,7 +2580,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'LUZ ADRIANA QUINTERO SANCHEZ',
             'performance_score' => 100,
             'employment_date' => '2008-12-15 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6176855',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2825,7 +2591,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ISABEL CRISTINA SANCHEZ GARCIA',
             'performance_score' => 100,
             'employment_date' => '1994-08-17 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2837,7 +2602,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'PAOLA ANDREA MEZA VILLOTA',
             'performance_score' => 100,
             'employment_date' => '2014-07-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2849,7 +2613,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'NELSON FABIÁN QUIJANO RAMOS',
             'performance_score' => 100,
             'employment_date' => '2014-05-12 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2861,7 +2624,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JANNE GRICEL RICO CARVAJAL',
             'performance_score' => 100,
             'employment_date' => '1996-06-04 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2873,7 +2635,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'EDNA LUZ MARALDY BELTRAN VILLAMIL',
             'performance_score' => 100,
             'employment_date' => '2010-03-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2885,7 +2646,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'HERNANDO RODRIGUEZ CHAPARRO',
             'performance_score' => 100,
             'employment_date' => '1995-10-19 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6176855',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2897,7 +2657,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JUAN CARLOS PARRA NIÑO',
             'performance_score' => 100,
             'employment_date' => '2014-08-11 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6176855',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2909,7 +2668,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'AUGUSTO VARON RUIZ',
             'performance_score' => 100,
             'employment_date' => '2014-04-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6176855',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2921,7 +2679,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'RUBY ESMITH GALEANO BLANCO',
             'performance_score' => 100,
             'employment_date' => '2013-01-09 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2933,7 +2690,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JACQUELINE GARAVITO MARIÑO',
             'performance_score' => 100,
             'employment_date' => '2014-05-12 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2945,7 +2701,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'LUIS MAURICIO JULIO CUCANCHON',
             'performance_score' => 100,
             'employment_date' => '1996-05-15 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2957,7 +2712,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ANDRES MAURICIO ZAMBRANO FLOREZ',
             'performance_score' => 100,
             'employment_date' => '2010-03-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2969,7 +2723,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CLAUDIA PATRICIA RIVERA CASTRO',
             'performance_score' => 100,
             'employment_date' => '2008-12-18 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2981,7 +2734,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'PATRIK ERNESTO ALFONSO CAICEDO',
             'performance_score' => 100,
             'employment_date' => '2010-10-21 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6176855',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -2993,7 +2745,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'IVAN DARIO ARISTIZABAL HENAO',
             'performance_score' => 100,
             'employment_date' => '2014-04-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6176855',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3005,7 +2756,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'HUGO YEZID GORDILLO GÓNGORA',
             'performance_score' => 0,
             'employment_date' => '2019-03-12 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3211673',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3017,7 +2767,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CLAUDIA XIMENA ALVARADO CORREA',
             'performance_score' => 0,
             'employment_date' => '2018-09-04 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3950730',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3029,7 +2778,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ÁNGELA PATRICIA CASTELLANOS BOTHIA',
             'performance_score' => 100,
             'employment_date' => '2018-09-03 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3041,7 +2789,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MARIA FERNANDA BARANDICA ROLDAN',
             'performance_score' => 0,
             'employment_date' => '2014-08-19 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3053,7 +2800,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'LILIANA AMPARO SIERRA PARDO',
             'performance_score' => 0,
             'employment_date' => '2019-04-10 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3950730',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3065,7 +2811,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'GERARDO ANDRES PARADA GOMEZ',
             'performance_score' => 100,
             'employment_date' => '2011-09-06 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3077,7 +2822,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'LUZ MARYORI VARGAS ROMERO',
             'performance_score' => 100,
             'employment_date' => '2014-05-02 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3089,7 +2833,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'LUIS EDUARDO ACUÑA GALINDO',
             'performance_score' => 100,
             'employment_date' => '2014-08-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3101,7 +2844,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'YENNY PAOLA CADENA MEDINA',
             'performance_score' => 100,
             'employment_date' => '2018-08-15 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '3950730',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3113,7 +2855,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JENY PATRICIA MARTIN BUITRAGO',
             'performance_score' => 100,
             'employment_date' => '2018-09-04 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4367944',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3125,7 +2866,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'SUSANA PAREDES GONZALEZ',
             'performance_score' => 100,
             'employment_date' => '2010-01-21 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3137,7 +2877,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ERNESTO FONTECHA FONTECHA',
             'performance_score' => 100,
             'employment_date' => '2014-11-11 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3149,7 +2888,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MARCELA ROJAS CARDENAS',
             'performance_score' => 100,
             'employment_date' => '2014-08-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3161,7 +2899,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JULIANA MAYERLY BOSSA QUINTERO',
             'performance_score' => 100,
             'employment_date' => '2014-05-02 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3173,7 +2910,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ANGELA CONSUELO TORRES ACEVEDO',
             'performance_score' => 100,
             'employment_date' => '2014-07-07 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3185,7 +2921,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'GLADYS LILIANA NAJAR SARMIENTO',
             'performance_score' => 100,
             'employment_date' => '1995-08-24 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3197,7 +2932,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MAGALY ALVAREZ MAHECHA',
             'performance_score' => 100,
             'employment_date' => '2015-01-02 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3209,7 +2943,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'AIDA NURY BERNAL JAIMES',
             'performance_score' => 100,
             'employment_date' => '2014-05-02 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3221,7 +2954,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'LUIS EDUARDO NIÑO VELANDIA',
             'performance_score' => 100,
             'employment_date' => '1997-09-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3233,7 +2965,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'SANDRA PILAR SALCEDO RUALES',
             'performance_score' => 100,
             'employment_date' => '2014-07-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3245,7 +2976,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'HERNAN LOZANO TRIANA',
             'performance_score' => 0,
             'employment_date' => '1994-06-21 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3257,7 +2987,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'LUIS ALFREDO CONTRERAS TRUJILLO',
             'performance_score' => 100,
             'employment_date' => '2014-05-02 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3269,7 +2998,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'HERNERLY SHIRLEY SANCHEZ BOLIVAR',
             'performance_score' => 100,
             'employment_date' => '2014-09-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3281,7 +3009,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'GINA MARCELA CORTES PARRA',
             'performance_score' => 100,
             'employment_date' => '2011-09-07 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3293,7 +3020,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'LUIS BERNARDO CARRILLO ALVAREZ',
             'performance_score' => 100,
             'employment_date' => '1996-02-23 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6176855',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3305,7 +3031,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'GLORIA CLEMENCIA GUARIN TORRES',
             'performance_score' => 98,
             'employment_date' => '1993-01-06 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6176855',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3317,7 +3042,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'LUIS ENRIQUE SILVA SEGURA',
             'performance_score' => 100,
             'employment_date' => '2010-01-21 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2250064',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3329,7 +3053,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'LUIS FERNANDO CAMELO SILVA',
             'performance_score' => 100,
             'employment_date' => '1995-06-16 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3341,7 +3064,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'HERNANDO ALIRIO CADENA GOMEZ',
             'performance_score' => 0,
             'employment_date' => '1996-03-05 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3353,7 +3075,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ALMA ROSA AGUALIMPIA DUALIBY',
             'performance_score' => 0,
             'employment_date' => '2006-02-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3365,7 +3086,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'DIANA LUCIA BARRIOS BARRERO',
             'performance_score' => 100,
             'employment_date' => '2015-02-05 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6176855',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3377,7 +3097,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'EDWIN ALIRIO AVILA WALTEROS',
             'performance_score' => 100,
             'employment_date' => '2018-09-14 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '2077050',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3389,7 +3108,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CARLOS ANDRES JAIMES VERA',
             'performance_score' => 100,
             'employment_date' => '2019-05-02 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1664922',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3401,7 +3119,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'ANA FRANCISCA USSA ALVAREZ',
             'performance_score' => 100,
             'employment_date' => '2015-11-12 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3413,7 +3130,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MARCELA TERESA TORRES HARKER',
             'performance_score' => 100,
             'employment_date' => '2011-11-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3425,7 +3141,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CARLOS ARTURO VELASCO ARIAS',
             'performance_score' => 99,
             'employment_date' => '2014-04-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3437,7 +3152,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'LUIS GIOVANNY GARZON GIL',
             'performance_score' => 100,
             'employment_date' => '2014-08-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3449,7 +3163,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'RUTH YANETH RUIZ ALVAREZ',
             'performance_score' => 99,
             'employment_date' => '1984-11-26 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3461,7 +3174,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JENNY VARGAS GUATAQUIRA',
             'performance_score' => 100,
             'employment_date' => '2010-02-16 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3473,7 +3185,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'GILBER ALEXANDER CASTILLO COBO',
             'performance_score' => 100,
             'employment_date' => '1995-08-02 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3485,7 +3196,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'CAMILO ERNESTO MUÑOZ CABRERA',
             'performance_score' => 100,
             'employment_date' => '2014-05-02 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3497,7 +3207,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'LINA GISELLA SUAREZ LOSADA',
             'performance_score' => 100,
             'employment_date' => '2018-09-14 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3509,7 +3218,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JADY OLIVA CABALLERO CRUZ',
             'performance_score' => 100,
             'employment_date' => '2014-05-02 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6176855',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3521,7 +3229,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'EDGAR HERNAN RODRIGUEZ ARIZA',
             'performance_score' => 100,
             'employment_date' => '2009-01-05 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6176855',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3533,7 +3240,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'YAMITH ROCIO NIÑO CONTRERAS',
             'performance_score' => 100,
             'employment_date' => '2014-04-07 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3545,7 +3251,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MARIA MARGARITA GUTIERREZ DELGADO',
             'performance_score' => 100,
             'employment_date' => '1978-12-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3557,7 +3262,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'LADY MORENO CIFUENTES',
             'performance_score' => 100,
             'employment_date' => '2014-05-02 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3569,7 +3273,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JOSE NORBERTO OSPINA HERNÁNDEZ',
             'performance_score' => 100,
             'employment_date' => '2014-07-14 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '4709262',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3581,7 +3284,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'OMAR ORLANDO GARCIA BOGOTA',
             'performance_score' => 100,
             'employment_date' => '2014-05-12 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6176855',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3593,7 +3295,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'LUISA FERNANDA HENAO RAMIREZ',
             'performance_score' => 100,
             'employment_date' => '2010-03-01 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6176855',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3605,7 +3306,6 @@ class EmployeesSeeder extends Seeder {
             'name' => 'MARIA DEL PILAR ARDILA QUINTERO',
             'performance_score' => 100,
             'employment_date' => '2014-06-03 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '6176855',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -3617,264 +3317,11 @@ class EmployeesSeeder extends Seeder {
             'name' => 'JOHANNA ATEHORTUA RODRIGUEZ',
             'performance_score' => 100,
             'employment_date' => '2018-09-14 00:00:00',
-            'last_year_beneficiary' => 0,
             'wage' => '1920275',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'is_administrative' => 0
         ]);
-
-        DB::table('employees')
-            -> where('document', 52957174)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 52519672)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 52834903)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 52033318)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 80235033)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 79569388)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 80235033)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 51837704)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 65554501)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 65738385)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 74379564)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 52834903)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 19469022)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 79371059)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 52054602)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 79270189)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 51648984)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 52494017)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 65554501)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 88000876)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 32707483)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 63447470)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 79147133)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 79147133)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 51842223)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 80180015)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 39535332)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 19261879)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 52103154)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 23607225)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 261874)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 261874)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 19425324)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 41723945)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 39788710)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 52145712)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 52644107)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 52157557)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 60308989)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 79279432)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 51690199)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 79569388)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 79448382)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 1049604703)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 52172034)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 52930452)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 88000876)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 79598354)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 36456602)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 52411973)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 52118473)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 74379564)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 79318638)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 4071207)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 40036998)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 52009765)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 13895205)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 52519672)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 28566983)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 52361029)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 52157942)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 37898086)
-            -> update(['last_year_beneficiary' => 1]);
-
-        DB::table('employees')
-            -> where('document', 1018407285)
-            -> update(['last_year_beneficiary' => 1]);
 
     }
 }

@@ -16,7 +16,7 @@
 @section('top-buttons')
         <a href="{{ route('applications.create') }}" class="btn btn-neutral">
             <i class="fas fa-user-plus"></i>
-            Nueva solicitud
+            Crear solicitud manualmente
         </a>
 @endsection
 @section('content')
@@ -74,17 +74,18 @@
                             <th scope="col" class="sort" data-sort="application_type"> Tipo </th>
                             <th scope="col" class="sort" data-sort="application_target"> Nivel </th>
                             <th scope="col" class="sort" data-sort="employment_date"> Cantidad </th>
-                            <th scope="col" class="sort" data-sort="req-ob-count"> Req. Oblig.</th>
-                            <th scope="col" class="sort" data-sort="req-op-count"> Req. Opcio.</th>
+                            <th scope="col" class="sort" data-sort="req-ob-count"> Req. Obligatorios</th>
+                            <th scope="col" class="sort" data-sort="req-op-count"> Req. Condicionales</th>
                             <th scope="col" class="sort" data-sort="final-score"> Puntaje </th>
                             <th scope="col" class="text-center"> Acciones </th>
                         </tr>
                         </thead>
                         <tbody class="list" id="data-list">
                             @foreach($data as $entry)
-                            @php($pond_req = \App\Http\Controllers\ApplicationController::ponderate_requirements($entry))
-                            @php($pond_opt = \App\Http\Controllers\ApplicationController::ponderate_optionals($entry))
-                            @php($score = \App\Http\Controllers\ApplicationController::calculate_score(\App\Models\Employee::firstWhere('id', $entry -> employee), $entry))
+                            @php($employee = \App\Models\Employee::firstWhere('id', $entry -> employee))
+                            @php($pond_req = \App\Http\Controllers\ApplicationController::ponderate_requirements($entry, $employee))
+                            @php($pond_opt = \App\Http\Controllers\ApplicationController::ponderate_conditionals($entry, $employee))
+                            @php($score = \App\Http\Controllers\ApplicationController::calculate_score($entry, $employee))
                             <tr>
                                 <td scope="row">
                                     {{ $entry -> filling_number }}
@@ -96,39 +97,52 @@
                                     {{ \App\Models\Employee::firstWhere('id', $entry -> employee) -> name }}
                                 </td>
                                 <td scope="row">
-                                    {{ strtoupper(\App\Models\ApplicationType::firstWhere('id', $entry -> application_type) -> name) }}
+                                    {{ mb_strtoupper(\App\Models\ApplicationType::firstWhere('id', $entry -> application_type) -> name) }}
                                 </td>
                                 <td scope="row">
-                                    {{ strtoupper(\App\Models\ApplicationTarget::firstWhere('id', $entry -> application_target) -> name) }}
+                                    {{ mb_strtoupper(\App\Models\ApplicationTarget::firstWhere('id', $entry -> application_target) -> name) }}
                                 </td>
                                 <td scope="row">
                                     $ {{ number_format($entry -> requested_money, 2, ',', '.') }}
                                 </td>
                                 <td>
                                     <div class="d-flex align-items-center">
-                                        <span class="completion mr-2"> {{ $pond_req }}/3 </span>
+                                        <span class="completion mr-2"> {{ $pond_req[1] }}/{{ $pond_req[0] }} </span>
                                         <div>
-                                            <div class="progress">
-                                                <div class="progress-bar @if($pond_req == 3) bg-success @else bg-danger @endif" role="progressbar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100" style="width: {{ ($pond_req/3)*100 }}%;"></div>
+                                            <div class="progress" style="width: 75px !important;">
+                                                <div class="progress-bar @if($pond_req[1] == $pond_req[0]) bg-success @else bg-danger @endif" role="progressbar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100" style="width: {{ $pond_req[2] }}%;"></div>
                                             </div>
                                         </div>
+                                        &nbsp;&nbsp;
+                                        <button class="btn btn-outline-primary btn-sm" data-container="body" data-toggle="popover" data-color="secondary" data-placement="left" data-html="true" data-content="{{ $pond_req[3] }}">
+                                            <i class="fas fa-question"></i>
+                                        </button>
                                     </div>
                                 </td>
                                 <td>
                                     <div class="d-flex align-items-center">
-                                        <span class="completion mr-2"> {{ $pond_opt }}/3 </span>
+                                        <span class="completion mr-2"> @if($pond_opt[0] == 0) <span class="text-gray">No aplica</span> @else {{ $pond_opt[1] }}/{{ $pond_opt[0] }} @endif </span>
+                                        @if($pond_opt[0] != 0)
                                         <div>
-                                            <div class="progress">
-                                                <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100" style="width: {{ ($pond_opt/3)*100 }}%;"></div>
+                                            <div class="progress" style="width: 75px !important;">
+                                                <div class="progress-bar @if($pond_opt[1] == $pond_opt[0]) bg-success @else bg-danger @endif" role="progressbar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100" style="width: {{ $pond_opt[2] }}%;"></div>
                                             </div>
                                         </div>
+                                        &nbsp;&nbsp;
+                                        <button class="btn btn-outline-primary btn-sm" data-container="body" data-toggle="popover" data-color="secondary" data-placement="left" data-html="true" data-content="{{ $pond_opt[3] }}">
+                                            <i class="fas fa-question"></i>
+                                        </button>
+                                        @endif
                                     </div>
                                 </td>
                                 <td>
                                     <span class="badge badge-dot mr-4">
-                                        <i class=" @if($score >= 67) bg-success @elseif($score < 67 && $score >= 33) bg-warning @else bg-danger @endif "></i>
-                                        <span class="status"> {{ $score }} </span>
+                                        <i class=" @if($score >= 67) bg-success @elseif($score[0] < 67 && $score[0] >= 33) bg-warning @else bg-danger @endif "></i>
+                                        <span class="status"> {{ $score[0] }} </span>
                                     </span>
+                                    <button class="btn btn-outline-primary btn-sm" data-container="body" data-toggle="popover" data-color="secondary" data-placement="left" data-html="true" data-content="{{ $score[1] }}">
+                                        <i class="fas fa-question"></i>
+                                    </button>
                                 </td>
                                 <td class="text-center">
                                     <a href="{{ route('applications.edit', $entry -> id) }}" class="btn btn-info btn-icon-only btn-sm" data-toggle="tooltip" data-placement="bottom" title="Editar esta solicitud">
