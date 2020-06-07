@@ -4,11 +4,11 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateApplicationTypesTable extends Migration
+class CreateRecipientTypesTable extends Migration
 {
     public function up()
     {
-        Schema::create('application_types', function (Blueprint $table) {
+        Schema::create('recipient_types', function (Blueprint $table) {
             $table -> bigIncrements('id');
             $table -> string('name');
             $table -> timestamps();
@@ -17,6 +17,6 @@ class CreateApplicationTypesTable extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('application_types');
+        Schema::dropIfExists('recipient_types');
     }
 }

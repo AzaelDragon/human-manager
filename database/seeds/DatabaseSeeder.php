@@ -11,8 +11,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run() {
         $this -> call([
-            ApplicationTargetsSeeder::class,
-            ApplicationTypesSeeder::class,
+            RecipientTypesSeeder::class,
+            EducationLevelsSeeder::class,
             EmployeesSeeder::class
         ]);
     }

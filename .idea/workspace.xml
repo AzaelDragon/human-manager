@@ -20,20 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b75a7382-6a40-460c-a0ec-1705310a8b8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_ide_helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_ide_helper_models.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_06_06_115339_create_recipients_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_06_06_121319_create_old_recipients_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ApplicationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ApplicationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Application.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Application.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_28_174543_create_applications_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_28_174543_create_applications_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/ApplicationTargetsSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ApplicationTargetsSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/applications/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/applications/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/applications/edit.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/applications/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/applications/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/applications/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/applications/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assistant/basic.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/assistant/basic.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_28_174726_create_application_types_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_28_174726_create_recipient_types_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_28_175346_create_application_targets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_28_175346_create_education_levels_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/ApplicationTargetsSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/EducationLevelsSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/ApplicationTypesSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/RecipientTypesSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,6 +222,8 @@
       <workItem from="1590795459050" duration="6473000" />
       <workItem from="1590985617311" duration="54914000" />
       <workItem from="1591316111335" duration="35243000" />
+      <workItem from="1591462288599" duration="2959000" />
+      <workItem from="1591490858146" duration="629000" />
     </task>
     <servers />
   </component>
@@ -243,11 +240,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="560" y="190" key="#Deployment" timestamp="1591492628751">
+      <screen x="0" y="23" width="1920" height="1003" />
+    </state>
+    <state x="560" y="190" key="#Deployment/0.23.1920.1003/-1920.23.1920.1057/1920.23.1920.1057@0.23.1920.1003" timestamp="1591492628751" />
     <state x="560" y="226" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591316158431">
       <screen x="0" y="23" width="1920" height="1003" />
     </state>
@@ -257,6 +259,10 @@
       <screen x="0" y="23" width="1920" height="1003" />
     </state>
     <state x="721" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.1003/-1920.23.1920.1057/1920.23.1920.1057@0.23.1920.1003" timestamp="1591389011949" />
+    <state x="755" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1591463171199">
+      <screen x="0" y="23" width="1920" height="1003" />
+    </state>
+    <state x="755" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1920.1003/-1920.23.1920.1057/1920.23.1920.1057@0.23.1920.1003" timestamp="1591463171199" />
     <state x="698" y="338" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590990760981">
       <screen x="0" y="23" width="1920" height="1122" />
     </state>
@@ -271,9 +277,10 @@
       <screen x="0" y="23" width="1920" height="1003" />
     </state>
     <state x="806" y="440" key="Create Controller/0.23.1920.1003/-1920.23.1920.1057/1920.23.1920.1057@0.23.1920.1003" timestamp="1591320509525" />
-    <state x="703" y="456" key="Create Database Migration" timestamp="1590707125273">
-      <screen x="0" y="23" width="1920" height="1124" />
+    <state x="703" y="409" key="Create Database Migration" timestamp="1591463599816">
+      <screen x="0" y="23" width="1920" height="1003" />
     </state>
+    <state x="703" y="409" key="Create Database Migration/0.23.1920.1003/-1920.23.1920.1057/1920.23.1920.1057@0.23.1920.1003" timestamp="1591463599816" />
     <state x="703" y="456" key="Create Database Migration/0.23.1920.1124@0.23.1920.1124" timestamp="1590707125273" />
     <state x="842" y="516" key="Create Database Seeder" timestamp="1590955607121">
       <screen x="0" y="23" width="1920" height="1124" />
@@ -302,11 +309,11 @@
     <state x="779" y="461" key="NewPhpFileDialog/0.23.1920.1003/-1920.23.1920.1057/1920.23.1920.1057@0.23.1920.1003" timestamp="1591336532999" />
     <state x="779" y="514" key="NewPhpFileDialog/0.23.1920.1122@0.23.1920.1122" timestamp="1590990323640" />
     <state x="779" y="515" key="NewPhpFileDialog/0.23.1920.1124@0.23.1920.1124" timestamp="1590888998196" />
-    <state x="490" y="141" width="1339" height="722" key="SettingsEditor" timestamp="1591323520867">
+    <state x="490" y="141" width="1339" height="722" key="SettingsEditor" timestamp="1591462376979">
       <screen x="0" y="23" width="1920" height="1003" />
     </state>
     <state x="116" y="153" width="1339" height="722" key="SettingsEditor/0.23.1920.1002/1920.23.1920.1057@0.23.1920.1002" timestamp="1591046750802" />
-    <state x="490" y="141" key="SettingsEditor/0.23.1920.1003/-1920.23.1920.1057/1920.23.1920.1057@0.23.1920.1003" timestamp="1591323520867" />
+    <state x="490" y="141" key="SettingsEditor/0.23.1920.1003/-1920.23.1920.1057/1920.23.1920.1057@0.23.1920.1003" timestamp="1591462376979" />
     <state x="116" y="169" width="1339" height="751" key="SettingsEditor/0.23.1920.1124@0.23.1920.1124" timestamp="1590985767686" />
     <state width="566" height="446" key="SwitcherDM" timestamp="1591330104747">
       <screen x="0" y="23" width="1920" height="1003" />

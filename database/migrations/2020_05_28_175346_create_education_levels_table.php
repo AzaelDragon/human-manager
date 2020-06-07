@@ -4,10 +4,10 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateApplicationTargetsTable extends Migration
+class CreateEducationLevelsTable extends Migration
 {
     public function up() {
-        Schema::create('application_targets', function (Blueprint $table) {
+        Schema::create('education_levels', function (Blueprint $table) {
             $table -> bigIncrements('id');
             $table -> string('name');
             $table -> timestamps();
@@ -15,6 +15,7 @@ class CreateApplicationTargetsTable extends Migration
     }
 
     public function down() {
-        Schema::dropIfExists('application_targets');
+        Schema::dropIfExists('education_levels');
     }
+
 }

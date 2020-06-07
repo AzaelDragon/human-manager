@@ -3,7 +3,7 @@
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Carbon;
 
-class ApplicationTargetsSeeder extends Seeder {
+class EducationLevelsSeeder extends Seeder {
 
     /**
      * Run the database seeds.
@@ -11,61 +11,67 @@ class ApplicationTargetsSeeder extends Seeder {
      * @return void
      */
     public function run() {
-        DB::table('application_targets') -> insert([
+        DB::table('education_levels') -> insert([
             'name' => 'Preescolar',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
 
-        DB::table('application_targets') -> insert([
-            'name' => 'Básica',
+        DB::table('education_levels') -> insert([
+            'name' => 'Primaria',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
 
-        DB::table('application_targets') -> insert([
+        DB::table('education_levels') -> insert([
+            'name' => 'Secundaria',
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
+        ]);
+
+        DB::table('education_levels') -> insert([
             'name' => 'Media',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
 
-        DB::table('application_targets') -> insert([
+        DB::table('education_levels') -> insert([
             'name' => 'Técnico',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
 
-        DB::table('application_targets') -> insert([
+        DB::table('education_levels') -> insert([
             'name' => 'Tecnológica',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
 
-        DB::table('application_targets') -> insert([
+        DB::table('education_levels') -> insert([
             'name' => 'Profesional',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
 
-        DB::table('application_targets') -> insert([
+        DB::table('education_levels') -> insert([
             'name' => 'Especialización',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
 
-        DB::table('application_targets') -> insert([
+        DB::table('education_levels') -> insert([
             'name' => 'Maestría',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
 
-        DB::table('application_targets') -> insert([
+        DB::table('education_levels') -> insert([
             'name' => 'Doctorado',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
 
-        DB::table('application_targets') -> insert([
+        DB::table('education_levels') -> insert([
             'name' => 'Posdoctorado',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()

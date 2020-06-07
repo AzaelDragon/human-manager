@@ -3,7 +3,7 @@
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Carbon;
 
-class ApplicationTypesSeeder extends Seeder
+class RecipientTypesSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,12 +11,12 @@ class ApplicationTypesSeeder extends Seeder
      * @return void
      */
     public function run() {
-        DB::table('application_types') -> insert([
+        DB::table('recipient_types') -> insert([
             'name' => 'Propio',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
-        DB::table('application_types') -> insert([
+        DB::table('recipient_types') -> insert([
             'name' => 'Familiar',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
