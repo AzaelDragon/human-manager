@@ -71,9 +71,6 @@
                             <th scope="col" class="sort" data-sort="filling_number"> Radicado </th>
                             <th scope="col" class="sort" data-sort="filling_date"> Fecha </th>
                             <th scope="col" class="sort" data-sort="employee"> Empleado </th>
-                            <th scope="col" class="sort" data-sort="application_type"> Tipo </th>
-                            <th scope="col" class="sort" data-sort="application_target"> Nivel </th>
-                            <th scope="col" class="sort" data-sort="employment_date"> Cantidad </th>
                             <th scope="col" class="sort" data-sort="req-ob-count"> Req. Obligatorios</th>
                             <th scope="col" class="sort" data-sort="req-op-count"> Req. Condicionales</th>
                             <th scope="col" class="sort" data-sort="final-score"> Puntaje </th>
@@ -82,7 +79,7 @@
                         </thead>
                         <tbody class="list" id="data-list">
                             @foreach($data as $entry)
-                            @php($employee = $entry -> employee())
+                            @php($employee = $entry -> r_employee)
                             @php($pond_req = $entry -> mandatory_requirements)
                             @php($pond_opt = $entry -> conditional_requirements)
                             @php($score = $entry -> score)
@@ -99,15 +96,6 @@
                                 </td>
                                 <td scope="row">
                                     {{ \App\Models\Employee::firstWhere('id', $entry -> employee) -> name }}
-                                </td>
-                                <td scope="row">
-                                    {{ mb_strtoupper(\App\Models\ApplicationType::firstWhere('id', $entry -> application_type) -> name) }}
-                                </td>
-                                <td scope="row">
-                                    {{ mb_strtoupper(\App\Models\ApplicationTarget::firstWhere('id', $entry -> application_target) -> name) }}
-                                </td>
-                                <td scope="row">
-                                    $ {{ number_format($entry -> requested_money, 2, ',', '.') }}
                                 </td>
                                 <td>
                                     <button class="d-flex align-items-center btn btn-link text-default" data-container="body" data-toggle="popover" data-color="secondary" data-placement="left" data-html="true" data-content="{{ $pond_req[3] }}">

@@ -29,9 +29,20 @@ Route::get('applications/search', function () {
     return redirect() -> route('applications.index');
 });
 Route::resource('applications', 'ApplicationController');
+Route::post('applications/comment_update', 'ApplicationController@updateComment') -> name('applications.comment');
 
 Route::get('assistant/employee', 'AssistantController@employee_selector') -> name('assistant.employee');
 Route::post('assistant/employee', 'AssistantController@employee_lookup') -> name('assistant.employee.lookup');
 Route::post('assistant/store', 'ApplicationController@meta_store') -> name('assistant.store');
 
 Route::get('assistant/basic/{employee}', 'AssistantController@basic_info') -> name('assistant.basic');
+
+Route::resource('recipients', 'RecipientController') -> except('show');
+Route::post('recipients/search', 'RecipientController@search') -> name('recipients.search');
+Route::get('recipients/search', function () {
+    return redirect() -> route('recipients.index');
+});
+
+Route::get('reports/requirements', 'ReportController@req_report') -> name('reports.requirements');
+
+Route::get('x', 'RecipientController@oldies') -> name('old');

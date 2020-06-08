@@ -5,6 +5,7 @@
       <map>
         <entry key="createController.invocable" value="false" />
         <entry key="createDatabaseMigration.create" value="true" />
+        <entry key="createResourceController.apiOnly" value="false" />
       </map>
     </option>
   </component>

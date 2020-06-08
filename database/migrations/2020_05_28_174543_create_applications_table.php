@@ -11,8 +11,8 @@ class CreateApplicationsTable extends Migration
             $table -> bigIncrements('id');
             $table -> string('filling_number');
             $table -> date('filling_date') -> nullable();
-            $table -> unsignedBigInteger('recipient_1');
-            $table -> unsignedBigInteger('recipient_2');
+            $table -> unsignedBigInteger('recipient_1') -> nullable();
+            $table -> unsignedBigInteger('recipient_2') -> nullable();
             $table -> unsignedBigInteger('employee');
             $table -> string('comments') -> nullable();
             $table -> boolean('has_interest_letter');

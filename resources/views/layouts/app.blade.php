@@ -50,6 +50,12 @@
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link @if($active == 'recipients') active @endif " href="{{ route('recipients.index') }}">
+                                <i class="fas fa-star text-orange"></i>
+                                <span class="nav-link-text"> Beneficiarios </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link @if($active == 'applications') active @endif " href="{{ route('applications.index') }}">
                                 <i class="ni ni-bullet-list-67 text-orange"></i>
                                 <span class="nav-link-text"> Solicitudes </span>
@@ -62,9 +68,9 @@
                     </h6>
                     <ul class="navbar-nav mb-md-3">
                         <li class="nav-item">
-                            <a class="nav-link @if($active == 'general') active @endif " href="">
+                            <a class="nav-link @if($active == 'requirements') active @endif " href="{{ route('reports.requirements') }}">
                                 <i class="ni ni-chart-pie-35 text-indigo"></i>
-                                <span class="nav-link-text"> General </span>
+                                <span class="nav-link-text"> Requerimientos </span>
                             </a>
                         </li>
                         <li class="nav-item">

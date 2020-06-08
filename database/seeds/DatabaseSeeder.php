@@ -13,7 +13,10 @@ class DatabaseSeeder extends Seeder
         $this -> call([
             RecipientTypesSeeder::class,
             EducationLevelsSeeder::class,
-            EmployeesSeeder::class
+            EmployeesSeeder::class,
+            OldRecipientsSeeder::class,
+            RecipientsSeeder::class,
+            ApplicationSeeder::class
         ]);
     }
 }

@@ -11,6 +11,17 @@ use Illuminate\Support\Facades\Validator;
 
 class ApplicationController extends Controller {
 
+    public function updateComment(Request $request) {
+        $comment = $request -> get('comments');
+        $app_id = $request -> get('application');
+
+        $application = Application::firstWhere('id', $app_id);
+
+        $application -> comments = $comment;
+        $application -> save();
+        return \redirect(route('applications.show', $app_id)) -> with('comment-ok', true);
+    }
+
     /**
      * Generate a list of registries matching the specified query.
      *
